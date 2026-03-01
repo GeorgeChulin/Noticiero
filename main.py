@@ -29,6 +29,12 @@ def main():
     with open(ruta_html, "w", encoding="utf-8") as f:
         f.write(html)
 
+    index_path = os.path.join("output", "index.html")
+    nombre_html = os.path.basename(ruta_html)
+    with open(index_path, "w", encoding="utf-8") as f:
+        f.write(f'<meta http-equiv="refresh" content="0; url={nombre_html}">')
+    print(f"✅ index.html actualizado → {nombre_html}")
+
     print(f"\n✅ Listo: {ruta_html}")
 
 if __name__ == "__main__":

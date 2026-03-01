@@ -1,8 +1,9 @@
 from datetime import datetime
 import markdown
 
-def generar_html(contenido_markdown: str) -> str:
+def generar_html(contenido_markdown: str, fecha_inicio: str = "", fecha_fin: str = "") -> str:
     fecha = datetime.now().strftime("%d de %B de %Y")
+    periodo = f"{fecha_inicio} — {fecha_fin}" if fecha_inicio else fecha
     
     html_body = markdown.markdown(contenido_markdown)
 
@@ -11,7 +12,7 @@ def generar_html(contenido_markdown: str) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberBrief - {fecha}</title>
+    <title>CyberBrief {fecha_inicio} — {fecha_fin}</title>
     <style>
         * {{ box-sizing: border-box; margin: 0; padding: 0; }}
         
@@ -89,7 +90,7 @@ def generar_html(contenido_markdown: str) -> str:
 </head>
 <body>
     {html_body}
-    <div class="footer">CyberBrief · Generado el {fecha}</div>
+    <div class="footer">CyberBrief · {periodo} · Generado el {fecha}</div>
 </body>
 </html>"""
 

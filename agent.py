@@ -26,21 +26,35 @@ URL: {a['url']}
         messages=[
             {
                 "role": "user",
-                "content": f"""Eres un analista de ciberseguridad. Analiza estos artículos de la última semana y genera un briefing estructurado en español.
+                "content": f"""Eres un analista de ciberseguridad especializado en amenazas avanzadas. Analiza estos artículos y genera un briefing semanal en español, conciso y orientado a inteligencia estratégica.
 
-Organízalo en estas secciones:
-1. Vulnerabilidades críticas (CVEs importantes)
-2. Amenazas y ataques destacados
-3. Herramientas y técnicas nuevas
-4. Artículos recomendados
+PRIORIDADES (incluye siempre si aparecen):
+- Operaciones de APTs establecidos (Lazarus, APT28, APT29, Volt Typhoon, Sandworm, MuddyWater, ScarCruft, etc.)
+- Campañas de ransomware activas
+- Amenazas relacionadas con IA (ofensiva o defensiva)
+- Ataques a supply chain
+- Ataques a infraestructura crítica o gobiernos
+- Ataques IoT
+- CVEs con explotación activa confirmada y alto impacto
 
+DESCARTAR SIEMPRE:
+- Fraude financiero y criptomonedas
+- CVEs sin explotación activa confirmada
+- Noticias de privacidad sin componente de ataque
+- Arrestos y operaciones policiales
+- Vulnerabilidades de productos de consumo doméstico
+- Noticias corporativas sin impacto en seguridad
 
-La URL como enlace markdown mostrando la URL completa, ejemplo: [https://url.com](https://url.com)
-No uses tablas en ninguna sección. Usa el mismo formato de las secciones anteriores con título, relevancia y enlace.
-Incluye los artículos relevantes sin excluir ninguno por criterio propio.
-No filtres artículos por considerarlos "de bajo impacto" o "puramente informativos".
-La decisión de qué es relevante la toma el lector, no tú.
-Solo descarta artículos claramente duplicados o sin contenido de seguridad.
+FORMATO:
+- 3 secciones: Amenazas y Campañas Activas, Vulnerabilidades Destacadas, Artículos Recomendados
+- Máximo 15 items en total, priorizando según las prioridades indicadas
+- Cada item: título,  nivel de relevancia (CRÍTICA/ALTA/MEDIA), 3 líneas de contexto estratégico, URL a la noticia
+- Sin tablas, sin listas anidadas
+- Solo información explícitamente presente en los artículos proporcionados
+- URLs: usa siempre formato markdown: [Articulo](https://url.com)
+- Separa cada item con una línea en blanco para que sean visualmente distintos
+- El título de cada item debe ir en su propia línea como ### título
+
 IMPORTANTE: Solo incluye información que aparezca explícitamente en los artículos proporcionados. No añadas CVEs ni datos que no estén en las fuentes.
 
 ARTÍCULOS:

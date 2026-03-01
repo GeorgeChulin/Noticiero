@@ -34,7 +34,9 @@ Organízalo en estas secciones:
 3. Herramientas y técnicas nuevas
 4. Artículos recomendados
 
-Para cada item incluye: título, por qué es relevante y la URL (siempre con formato URL).
+
+La URL como enlace markdown mostrando la URL completa, ejemplo: [https://url.com](https://url.com)
+No uses tablas en ninguna sección. Usa el mismo formato de las secciones anteriores con título, relevancia y enlace.
 Incluye los artículos relevantes sin excluir ninguno por criterio propio.
 No filtres artículos por considerarlos "de bajo impacto" o "puramente informativos".
 La decisión de qué es relevante la toma el lector, no tú.

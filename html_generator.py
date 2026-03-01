@@ -1,39 +1,10 @@
 from datetime import datetime
+import markdown
 
 def generar_html(contenido_markdown: str) -> str:
     fecha = datetime.now().strftime("%d de %B de %Y")
     
-    # Convertir markdown básico a HTML
-    lineas = contenido_markdown.split("\n")
-    html_body = ""
-    
-    for linea in lineas:
-        if linea.startswith("## "):
-            html_body += f"<h2>{linea[3:]}</h2>\n"
-        elif linea.startswith("### "):
-            html_body += f"<h3>{linea[4:]}</h3>\n"
-        elif linea.startswith("# "):
-            html_body += f"<h1>{linea[2:]}</h1>\n"
-        elif linea.startswith("- **") or linea.startswith("- "):
-            texto = linea[2:]
-            # Negrita
-            while "**" in texto:
-                texto = texto.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
-            # Links
-            if "http" in texto:
-                partes = texto.split("http")
-                url = "http" + partes[1].split(")")[0] if ")" in partes[1] else "http" + partes[1]
-                texto = f'<a href="{url.strip()}" target="_blank">{texto}</a>'
-            html_body += f"<li>{texto}</li>\n"
-        elif linea.startswith("---"):
-            html_body += "<hr>\n"
-        elif linea.strip() == "":
-            html_body += "<br>\n"
-        else:
-            texto = linea
-            while "**" in texto:
-                texto = texto.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
-            html_body += f"<p>{texto}</p>\n"
+    html_body = markdown.markdown(contenido_markdown)
 
     return f"""<!DOCTYPE html>
 <html lang="es">
@@ -130,7 +101,6 @@ if __name__ == "__main__":
     contenido = cargar_cache()
     html = generar_html(contenido)
     
-    # Guardar HTML en la misma carpeta que el markdown
     ruta_html = get_cache_path().replace(".md", ".html")
     with open(ruta_html, "w", encoding="utf-8") as f:
         f.write(html)

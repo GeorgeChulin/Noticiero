@@ -7,7 +7,7 @@ FUENTES = [
     "https://krebsonsecurity.com/feed/",
 ]
 
-def obtener_articulos(dias=2):
+def obtener_articulos(dias=7):
     limite = datetime.now(timezone.utc) - timedelta(days=dias)
     articulos = []
 

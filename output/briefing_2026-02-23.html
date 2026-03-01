@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberBrief - 01 de March de 2026</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            padding: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #58a6ff;
+            font-size: 1.4rem;
+            padding: 16px 0 8px;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 16px;
+        }
+        
+        h2 {
+            color: #f0883e;
+            font-size: 1.1rem;
+            margin: 24px 0 12px;
+            padding: 8px 12px;
+            background: #161b22;
+            border-left: 3px solid #f0883e;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        h3 {
+            color: #79c0ff;
+            font-size: 1rem;
+            margin: 16px 0 8px;
+        }
+        
+        li {
+            margin: 6px 0 6px 16px;
+            font-size: 0.9rem;
+            color: #c9d1d9;
+        }
+        
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        a:hover { text-decoration: underline; }
+        
+        p {
+            font-size: 0.9rem;
+            color: #8b949e;
+            margin: 4px 0;
+        }
+        
+        strong { color: #e6edf3; }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #30363d;
+            margin: 16px 0;
+        }
+        
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #30363d;
+            font-size: 0.8rem;
+            color: #484f58;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>BRIEFING DE CIBERSEGURIDAD - SEMANA DEL 27-28 DE FEBRERO 2026</h1>
+<br>
+<hr>
+<br>
+<h2>1. VULNERABILIDADES CRÍTICAS (CVEs)</h2>
+<br>
+<h3>ClawJacked - Flaw en OpenClaw AI Gateway</h3>
+<p><strong>Título:</strong> ClawJacked Flaw Lets Malicious Sites Hijack Local OpenClaw AI Agents via WebSocket</p>
+<br>
+<p><strong>Relevancia:</strong> Vulnerabilidad de alta severidad en el sistema core de OpenClaw que permite a sitios web maliciosos conectarse a agentes de IA locales y tomar control del sistema sin necesidad de plugins, extensiones del marketplace ni componentes adicionales.</p>
+<br>
+<p><strong>URL:</strong> https://thehackernews.com/2026/02/clawjacked-flaw-lets-malicious-sites.html</p>
+<br>
+<hr>
+<br>
+<h3>CVE-2025-0282 - RESURGE Malware en Ivanti Connect Secure</h3>
+<p><strong>Título:</strong> CISA warns that RESURGE malware can be dormant on Ivanti devices</p>
+<br>
+<p><strong>Relevancia:</strong> CISA ha publicado detalles sobre RESURGE, implante malicioso utilizado en ataques zero-day contra dispositivos Ivanti Connect Secure. El malware puede permanecer latente en sistemas comprometidos, representando una amenaza de acceso persistente sin detección inmediata.</p>
+<br>
+<p><strong>URL:</strong> https://www.bleepingcomputer.com/news/security/cisa-warns-that-resurge-malware-can-be-dormant-on-ivanti-devices/</p>
+<br>
+<hr>
+<br>
+<h3>Vulnerabilidad de Inyección de Comandos en Sangoma FreePBX</h3>
+<p><strong>Título:</strong> 900+ Sangoma FreePBX Instances Compromised in Ongoing Web Shell Attacks</p>
+<br>
+<p><strong>Relevancia:</strong> Una vulnerabilidad de inyección de comandos en FreePBX (explotada desde diciembre 2025) ha resultó en más de 900 instancias comprometidas con web shells. Distribución geográfica: 401 en EE.UU., 51 en Brasil, 43 en Canadá, 40 en Alemania y 36 en Francia.</p>
+<br>
+<p><strong>URL:</strong> https://thehackernews.com/2026/02/900-sangoma-freepbx-instances.html</p>
+<br>
+<hr>
+<br>
+<h2>2. AMENAZAS Y ATAQUES DESTACADOS</h2>
+<br>
+<h3>Exposición Masiva de Google Cloud API Keys con Acceso a Gemini</h3>
+<p><strong>Título:</strong> Thousands of Public Google Cloud API Keys Exposed with Gemini Access After API Enablement</p>
+<br>
+<p><strong>Relevancia:</strong> Truffle Security descubrió aproximadamente 3,000 API keys de Google (prefijo "AIza") expuestas en código client-side. Estas claves pueden ser abusadas para autenticarse en endpoints sensibles de Gemini y acceder a datos privados. Riesgo crítico en infraestructuras cloud.</p>
+<br>
+<p><strong>URL:</strong> https://thehackernews.com/2026/02/thousands-of-public-google-cloud-api.html</p>
+<br>
+<hr>
+<br>
+<h3>Módulo Go Malicioso - "crypto" Falso</h3>
+<p><strong>Título:</strong> Malicious Go Crypto Module Steals Passwords, Deploys Rekoobe Backdoor</p>
+<br>
+<p><strong>Relevancia:</strong> Módulo malicioso en github[.]com/xinfeisoft/crypto se impersonifica como "golang.org/x/crypto" legítimo. Inyecta código malicioso para exfiltrar contraseñas capturadas en terminal, crear acceso persistente vía SSH y desplegar backdoor Linux denominado Rekoobe. Amenaza supply chain significativa.</p>
+<br>
+<p><strong>URL:</strong> https://thehackernews.com/2026/02/malicious-go-crypto-module-steals.html</p>
+<br>
+<hr>
+<br>
+<h3>APT37 Desarrolla Herramientas para Eludir Sistemas Air-Gapped</h3>
+<p><strong>Título:</strong> APT37 hackers use new malware to breach air-gapped networks</p>
+<br>
+<p><strong>Relevancia:</strong> Hackers norcoreanos de APT37 despliegan herramientas recientemente descubiertas para transferir datos entre sistemas conectados a internet y aire aislado (air-gapped), propagación mediante unidades removibles y vigilancia encubierta.</p>
+<br>
+<p><strong>URL:</strong> https://www.bleepingcomputer.com/news/security/apt37-hackers-use-new-malware-to-breach-air-gapped-networks/</p>
+<br>
+<hr>
+<br>
+<h3>Botnet Kimwolf - Campaña de Represalias del Operador "Dort"</h3>
+<p><strong>Título:</strong> Who is the Kimwolf Botmaster "Dort"?</p>
+<br>
+<p><strong>Relevancia:</strong> El botnet Kimwolf (mayor y más disruptivo del mundo) es controlado por "Dort". Desde su exposición en enero 2026, el operador ha coordinado campañas masivas de DDoS, doxing, flooding de correos contra investigadores de seguridad e incluso ha ordenado operaciones SWAT. Representa amenaza contemporánea de represalias cibernéticas.</p>
+<br>
+<p><strong>URL:</strong> https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort/</p>
+<br>
+<hr>
+<br>
+<h3>Extensión Chrome QuickLens Comprometida para Robo de Criptomonedas</h3>
+<p><strong>Título:</strong> QuickLens Chrome extension steals crypto, shows ClickFix attack</p>
+<br>
+<p><strong>Relevancia:</strong> Extensión Chrome "QuickLens - Search Screen with Google Lens" fue comprometida y removida de Chrome Web Store. Distribuía malware e intentaba robar criptomonedas de miles de usuarios. Ilustra ataque ClickFix y riesgo de extensiones legítimas comprometidas.</p>
+<br>
+<p><strong>URL:</strong> https://www.bleepingcomputer.com/news/security/quicklens-chrome-extension-steals-crypto-shows-clickfix-attack/</p>
+<br>
+<hr>
+<br>
+<h3>Operación Europol "Project Compass" contra "The Com"</h3>
+<p><strong>Título:</strong> Europol-led crackdown on The Com hackers leads to 30 arrests</p>
+<br>
+<p><strong>Relevancia:</strong> Operación coordinada por Europol de un año denominada "Project Compass" resultó en 30 arrestos y 179 sospechosos vinculados a "The Com", colectivo cibercriminal especializado en atacar niños y adolescentes.</p>
+<br>
+<p><strong>URL:</strong> https://www.bleepingcomputer.com/news/security/police-crackdown-on-the-com-cybercrime-gang-leads-to-30-arrests/</p>
+<br>
+<hr>
+<br>
+<h3>Robo de $4.8M por Exposición de Seed Phrase de Agencia Fiscal Surcoreana</h3>
+<p><strong>Título:</strong> $4.8M in crypto stolen after Korean tax agency exposes wallet seed</p>
+<br>
+<p><strong>Relevancia:</strong> El Servicio Nacional de Impuestos de Corea del Sur expuso accidentalmente la frase mnemotécnica de recuperación de una billetera criptográfica incautada en un comunicado de prensa oficial. Permitió a hackers robar 6.4 mil millones de won ($4.8M). Error operacional crítico en manejo de activos digitales.</p>
+<br>
+<p><strong>URL:</strong> https://www.bleepingcomputer.com/news/security/48m-in-crypto-stolen-after-korean-tax-agency-exposes-wallet-seed/</p>
+<br>
+<hr>
+<br>
+<h3>Incautación de $61M en Tether Vinculado a Estafas Pig Butchering</h3>
+<p><strong>Título:</strong> DoJ Seizes $61 Million in Tether Linked to Pig Butchering Crypto Scams</p>
+<br>
+<p><strong>Relevancia:</strong> Departamento de Justicia de EE.UU. decomisó $61 millones en Tether asociados a esquemas de "pig butchering" (estafas de inversión criptográfica). Los fondos fueron trazados a direcciones utilizadas para lavado de dinero de víctimas de fraudes.</p>
+<br>
+<p><strong>URL:</strong> https://thehackernews.com/2026/02/doj-seizes-61-million-in-tether-linked.html</p>
+<br>
+<hr>
+<br>
+<h2>3. HERRAMIENTAS Y TÉCNICAS NUEVAS</h2>
+<br>
+<h3>Mejoras de Seguridad en Ejecución de Scripts Batch en Windows 11</h3>
+<p><strong>Título:</strong> Microsoft testing Windows 11 batch file security improvements</p>
+<br>
+<p><strong>Relevancia:</strong> Microsoft implementa nuevas versiones Insider Preview de Windows 11 con mejoras de seguridad y rendimiento durante ejecución de archivos batch y scripts CMD. Técnica defensiva contra automatización maliciosa.</p>
+<br>
+<p><strong>URL:</strong> https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-windows-11-batch-file-security-improvements/</p>
+<br>
+<hr>
+<br>
+<h3>Rekoobe - Backdoor Linux Nuevo</h3>
+<p><strong>Título:</strong> Malicious Go Crypto Module Steals Passwords, Deploys Rekoobe Backdoor</p>
+<br>
+<p><strong>Relevancia:</strong> Rekoobe es un backdoor Linux recientemente descubierto, desplegado a través del módulo Go malicioso. Proporciona acceso persistente y capacidades de vigilancia en sistemas comprometidos.</p>
+<br>
+<p><strong>URL:</strong> https://www.bleepingcomputer.com/news/security/malicious-go-crypto-module-steals.html</p>
+<br>
+<hr>
+<br>
+<h2>4. ARTÍCULOS RECOMENDADOS</h2>
+<br>
+<h3>Análisis del Ecosistema de Parches de Terceros</h3>
+<p><strong>Título:</strong> Third-Party Patching and the Business Footprint We All Share</p>
+<br>
+<p><strong>Relevancia:</strong> Action1 analiza cómo herramientas cotidianas (lectores PDF, clientes de correo, utilidades de archivo) definen la superficie de ataque real. Explora cómo la "derivación" de software de terceros incrementa riesgo de exploits y por qué parches consistentes reducen exposición en endpoints corporativos.</p>
+<br>
+<p><strong>URL:</strong> https://www.bleepingcomputer.com/news/security/third-party-patching-and-the-business-footprint-we-all-share/</p>
+<br>
+<hr>
+<br>
+<h3>Disputa Militar y Riesgo de Cadena de Suministro - Anthropic</h3>
+<p><strong>Título:</strong> Pentagon Designates Anthropic Supply Chain Risk Over AI Military Dispute</p>
+<br>
+<p><strong>Relevancia:</strong> Pentágono designó a Anthropic como "riesgo de cadena de suministro" tras negociaciones fallidas. Anthropic rechazó excepciones para vigilancia doméstica masiva de estadounidenses y armas autónomas. Relevancia en seguridad nacional, políticas de IA y riesgos geopolíticos.</p>
+<br>
+<p><strong>URL:</strong> https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html</p>
+<br>
+<hr>
+<br>
+<p><strong>Fecha de compilación:</strong> 28 de febrero de 2026  </p>
+<p><strong>Cobertura:</strong> 27-28 de febrero de 2026  </p>
+<p><strong>Fuentes:</strong> The Hacker News, BleepingComputer, Krebs on Security</p>
+
+    <div class="footer">CyberBrief · Generado el 01 de March de 2026</div>
+</body>
+</html>

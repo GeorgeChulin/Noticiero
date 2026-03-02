@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberBrief 23/02/2026 — 02/03/2026</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            padding: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #58a6ff;
+            font-size: 1.4rem;
+            padding: 16px 0 8px;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 16px;
+        }
+        
+        h2 {
+            color: #f0883e;
+            font-size: 1.1rem;
+            margin: 24px 0 12px;
+            padding: 8px 12px;
+            background: #161b22;
+            border-left: 3px solid #f0883e;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        h3 {
+            color: #79c0ff;
+            font-size: 1rem;
+            margin: 16px 0 8px;
+        }
+        
+        li {
+            margin: 6px 0 6px 16px;
+            font-size: 0.9rem;
+            color: #c9d1d9;
+        }
+        
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        a:hover { text-decoration: underline; }
+        
+        p {
+            font-size: 0.9rem;
+            color: #8b949e;
+            margin: 4px 0;
+        }
+        
+        strong { color: #e6edf3; }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #30363d;
+            margin: 16px 0;
+        }
+        
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #30363d;
+            font-size: 0.8rem;
+            color: #484f58;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>BRIEFING SEMANAL DE CIBERSEGURIDAD</h1>
+<p><strong>Semana del 23-01 de Marzo 2026</strong></p>
+<hr />
+<h2>AMENAZAS Y CAMPAÑAS ACTIVAS</h2>
+<h3>ScarCruft Explota Zoho WorkDrive para C2 y Breaches de Redes Air-Gapped</h3>
+<p><strong>Nivel de Relevancia: CRÍTICA</strong></p>
+<p>El APT norcoreano ScarCruft ha desplegado nuevas herramientas incluyendo un backdoor que utiliza Zoho WorkDrive como canal de comando y control (C2) para obtener payloads adicionales, y un implante que usa medios removibles para comunicarse y comprometer redes aisladas. La campaña "Ruby Jumper" marca una sofisticación operacional significativa en la evasión de defensas perimetrales tradicionales.</p>
+<p><a href="https://thehackernews.com/2026/02/scarcruft-uses-zoho-workdrive-and-usb.html">ScarCruft Uses Zoho WorkDrive and USB Malware to Breach Air-Gapped Networks</a></p>
+<hr />
+<h3>Lazarus Group Despliega Ransomware Medusa en Oriente Medio y Healthcare</h3>
+<p><strong>Nivel de Relevancia: CRÍTICA</strong></p>
+<p>El grupo vinculado a Corea del Norte ha sido atribuido al uso de ransomware Medusa en ataques dirigidos a entidades del Oriente Medio, con intentos fallidos documentados contra sectores de healthcare en Estados Unidos. Esto representa una expansión del arsenal ofensivo del grupo más allá de operaciones financieras tradicionales.</p>
+<p><a href="https://thehackernews.com/2026/02/lazarus-group-uses-medusa-ransomware-in.html">Lazarus Group Uses Medusa Ransomware in Middle East and U.S. Healthcare Attacks</a></p>
+<hr />
+<h3>APT28 Ejecuta Operación MacroMaze contra Entidades Europeas</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>El actor patrocinado por el estado ruso ha dirigido una campaña (septiembre 2025-enero 2026) contra objetivos específicos en Europa Occidental y Central utilizando macros basadas en webhooks y explotación de servicios legítimos. La actividad demuestra evolución tática hacia herramientas básicas pero efectivas.</p>
+<p><a href="https://thehackernews.com/2026/02/apt28-targeted-european-entities-using.html">APT28 Targeted European Entities Using Webhook-Based Macro Malware</a></p>
+<hr />
+<h3>UNC2814 GRIDTIDE: Campaña Masiva de Espionaje Cibernético</h3>
+<p><strong>Nivel de Relevancia: CRÍTICA</strong></p>
+<p>Google disruptó la infraestructura de este actor vinculado a China tras identificar 53 compromisos confirmados en 42 países, principalmente dirigidos a gobiernos internacionales y operadores de telecomunicaciones. El grupo ha mantenido un perfil bajo pero prolífico, con historial extendido de operaciones de espionaje.</p>
+<p><a href="https://thehackernews.com/2026/02/google-disrupts-unc2814-gridtide.html">Google Disrupts UNC2814 GRIDTIDE Campaign After 53 Breaches Across 42 Countries</a></p>
+<hr />
+<h3>UAT-10027: Nuevo Backdoor Dohdoor Contra Education y Healthcare en EE.UU.</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>Cluster de actividad previamente no documentado ha estado objetivo sectores de educación y healthcare estadounidenses desde al menos diciembre 2025. El backdoor Dohdoor utiliza DNS-over-HTTPS (DoH) como canal de C2 para evadir inspección tradicional de red.</p>
+<p><a href="https://thehackernews.com/2026/02/uat-10027-targets-us-education-and.html">UAT-10027 Targets U.S. Education and Healthcare with Dohdoor Backdoor</a></p>
+<hr />
+<h3>Sangoma FreePBX: 900+ Instancias Comprometidas con Web Shells</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>Shadowserver Foundation identificó más de 900 instancias infectadas por shells web resultantes de explotación de vulnerabilidad de command injection desde diciembre 2025. Distribución geográfica: 401 en EE.UU., 51 en Brasil, 43 en Canadá. Los compromisos probablemente vinculados a actividad criminal persistente.</p>
+<p><a href="https://thehackernews.com/2026/02/900-sangoma-freepbx-instances.html">900+ Sangoma FreePBX Instances Compromised in Ongoing Web Shell Attacks</a></p>
+<hr />
+<h3>UnsolicitedBooker Pivota a Telecomunicaciones Centroasiáticas</h3>
+<p><strong>Nivel de Relevancia: MEDIA</strong></p>
+<p>Cluster previamente enfocado en Arabia Saudita ahora dirige operaciones contra operadores de telecomunicaciones en Kirguistán y Tayikistán utilizando backdoors LuciDoor y MarsSnake. Cambio de objetivos geográficos sugiere adaptación a nuevas prioridades de inteligencia.</p>
+<p><a href="https://thehackernews.com/2026/02/unsolicitedbooker-targets-central-asian.html">UnsolicitedBooker Targets Central Asian Telecoms With LuciDoor and MarsSnake Backdoors</a></p>
+<hr />
+<h3>UAC-0050 Expande Operaciones a Instituciones Financieras Europeas</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>Actor alineado con Rusia dirige ataque de ingeniería social contra institución financiera europea no nombrada con uso de dominios suplantados y malware RMS. Representa expansión potencial de operaciones más allá de Ucrania hacia entidades que apoyan la nación.</p>
+<p><a href="https://thehackernews.com/2026/02/uac-0050-targets-european-financial.html">UAC-0050 Targets European Financial Institution With Spoofed Domain and RMS Malware</a></p>
+<hr />
+<h3>Scattered LAPSUS$ Hunters (SLH) Recluta para Campañas de Vishing</h3>
+<p><strong>Nivel de Relevancia: MEDIA</strong></p>
+<p>Colectivo criminal ofrece $500-$1,000 por llamada para reclutar mujeres en campañas de phishing de voz dirigidas a help desks de IT. Táctica de ingeniería social sofisticada enfocada en explotación de sesgos en procesos de autenticación de identidad.</p>
+<p><a href="https://thehackernews.com/2026/02/slh-offers-5001000-per-call-to-recruit.html">SLH Offers $500–$1,000 Per Call to Recruit Women for IT Help Desk Vishing Attacks</a></p>
+<hr />
+<h2>VULNERABILIDADES DESTACADAS</h2>
+<h3>CVE-2026-20127: Cisco SD-WAN Explotado desde 2023</h3>
+<p><strong>Nivel de Relevancia: CRÍTICA</strong></p>
+<p>Flaw de máxima severidad (CVSS 10.0) en Cisco Catalyst SD-WAN Controller y Manager permite bypass de autenticación a atacantes no autenticados para acceso administrativo. Explotación activa confirmada desde 2023, indicando distribución extendida sin parches en infraestructura operativa.</p>
+<p><a href="https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html">Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access</a></p>
+<hr />
+<h3>CVE-2026-25108: FileZen OS Command Injection Bajo Explotación Activa</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>CISA confirmó explotación activa de vulnerabilidad de command injection en FileZen (CVSS 8.7) que permite ejecución de comandos del SO a usuarios autenticados. Inclusión en catálogo KEV oficial indica distribución activa en entornos productivos.</p>
+<p><a href="https://thehackernews.com/2026/02/cisa-confirms-active-exploitation-of.html">CISA Confirms Active Exploitation of FileZen CVE-2026-25108 Vulnerability</a></p>
+<hr />
+<h3>SolarWinds Serv-U: 4 Flaws Críticos (CVE-2025-40538 y otros)</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>Cuatro vulnerabilidades críticas (CVSS 9.1) en Serv-U 15.5 permiten RCE, incluyendo broken access control que facilita creación de usuarios administrativos. Software de transferencia de archivos ampliamente desplegado en operaciones de supply chain.</p>
+<p><a href="https://thehackernews.com/2026/02/solarwinds-patches-4-critical-serv-u.html">SolarWinds Patches 4 Critical Serv-U 15.5 Flaws Allowing Root Code Execution</a></p>
+<hr />
+<h3>ClawJacked: Vulnerabilidad en OpenClaw AI Agent</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>Flaw crítica en el agente IA OpenClaw permitía a sitios maliciosos conectarse a instancias locales mediante WebSocket y tomar control. La vulnerabilidad reside en el sistema gateway central sin dependencias de plugins o extensiones de usuario.</p>
+<p><a href="https://thehackernews.com/2026/02/clawjacked-flaw-lets-malicious-sites.html">ClawJacked Flaw Lets Malicious Sites Hijack Local OpenClaw AI Agents via WebSocket</a></p>
+<hr />
+<h3>Claude Code: Vulnerabilidades de RCE y Exfiltración de Credenciales</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>Múltiples flaws en el asistente de codificación Claude de Anthropic explotaban hooks, servidores MCP y variables de entorno para lograr ejecución remota de código y robo de credenciales API. Impacto potencial en cadenas de suministro de desarrollo de software.</p>
+<p><a href="https://thehackernews.com/2026/02/claude-code-flaws-allow-remote-code.html">Claude Code Flaws Allow Remote Code Execution and API Key Exfiltration</a></p>
+<hr />
+<h3>RoguePilot: Fuga de GITHUB_TOKEN en GitHub Codespaces</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>Vulnerabilidad de inyección de prompts maliciosos en GitHub Codespaces permitía que actores inyectaran instrucciones maliciosas en issues de GitHub para que Copilot revelara tokens GITHUB_TOKEN sensibles, comprometiendo control de repositorios. Ya parcheada por Microsoft.</p>
+<p><a href="https://thehackernews.com/2026/02/roguepilot-flaw-in-github-codespaces.html">RoguePilot Flaw in GitHub Codespaces Enabled Copilot to Leak GITHUB_TOKEN</a></p>
+<hr />
+<h2>ARTÍCULOS RECOMENDADOS</h2>
+<h3>Google Cloud API Keys Expuestos: Acceso a Gemini</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>Investigación de Truffle Security identificó ~3,000 claves API de Google (prefijo "AIza") incrustadas en código cliente que podían ser abusadas para autenticar a endpoints sensibles de Gemini y acceder a datos privados. Las claves fueron históricamente consideradas inofensivas para billing.</p>
+<p><a href="https://thehackernews.com/2026/02/thousands-of-public-google-cloud-api.html">Thousands of Public Google Cloud API Keys Exposed with Gemini Access After API Enablement</a></p>
+<hr />
+<h3>Supply Chain: Campañas Maliciosas en npm, NuGet y Go</h3>
+<p><strong>Nivel de Relevancia: ALTA</strong></p>
+<p>Múltiples campañas de envenenamiento de repositorios públicos incluyendo: módulo Go "xinfeisoft/crypto" (suplantación de golang.org/x/crypto) entregando backdoor Rekoobe; paquetes NuGet maliciosos (StripeApi.Net, StripeApi) dirigidos a desarrolladores fintech; paquetes npm con credenciales de cosecha y robo de claves criptográficas.</p>
+<p><a href="https://thehackernews.com/2026/02/malicious-go-crypto-module-steals.html">Malicious Go Crypto Module Steals Passwords, Deploys Rekoobe Backdoor</a></p>
+<p><a href="https://thehackernews.com/2026/02/malicious-nuget-packages-stole-aspnet.html">Malicious NuGet Packages Stole ASP.NET Data; npm Package Dropped Malware</a></p>
+<p><a href="https://thehackernews.com/2026/02/malicious-npm-packages-harvest-crypto.html">Malicious npm Packages Harvest Crypto Keys, CI Secrets, and API Tokens</a></p>
+<hr />
+<h3>Amenazas Ofensivas de IA: Distilación de Modelos Claude</h3>
+<p><strong>Nivel de Relevancia: MEDIA</strong></p>
+<p>Anthropic identificó campañas a escala industrial de tres firmas IA chinas (DeepSeek, Moonshot AI, MiniMax) ejecutando ataques de destilación para extraer ilegalmente capacidades de Claude mediante 16M+ consultas desde ~24,000 cuentas fraudulentas en violación de términos de servicio.</p>
+<p><a href="https://thehackernews.com/2026/02/anthropic-says-chinese-ai-firms-used-16.html">Anthropic Says Chinese AI Firms Used 16 Million Claude Queries to Copy Model</a></p>
+<hr />
+<h3>Pentágono Designa Anthropic como Riesgo de Supply Chain</h3>
+<p><strong>Nivel de Relevancia: MEDIA</strong></p>
+<p>Secretario de Defensa Pete Hegseth dirigió al Pentágono designar a Anthropic como riesgo de cadena de suministro tras negociaciones fallidas sobre excepciones para vigilancia doméstica masiva y armas autónomas en el uso de Claude. Implicaciones estratégicas para integración de modelos IA en defensa.</p>
+<p><a href="https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html">Pentagon Designates Anthropic Supply Chain Risk Over AI Military Dispute</a></p>
+<hr />
+    <div class="footer">CyberBrief · 23/02/2026 — 02/03/2026 · Generado el 02 de March de 2026</div>
+</body>
+</html>

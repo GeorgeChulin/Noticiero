@@ -186,118 +186,115 @@
 </head>
 <body>
     <h1>BRIEFING SEMANAL DE CIBERSEGURIDAD</h1>
-<p><strong>Semana del 26 de febrero - 4 de marzo de 2026</strong></p>
+<p><strong>Período: 26 de febrero - 4 de marzo de 2026</strong></p>
 <hr />
 <h2>AMENAZAS Y CAMPAÑAS ACTIVAS</h2>
-<h3>APT28 Explotando CVE-2026-21513 (MSHTML 0-Day)</h3>
+<h3>APT28 Explota CVE-2026-21513 en MSHTML Antes del Parche</h3>
 <p><strong>Relevancia: CRÍTICA</strong></p>
-<p>El actor patrocinado por Rusia APT28 ha explotado activamente una vulnerabilidad de omisión de características de seguridad en MSHTML (CVSS 8.8) antes del parche de febrero de 2026. Akamai confirmó la explotación en ataques dirigidos. Esta es una de las primeras instancias documentadas de APT28 aprovechando un 0-day de alto impacto contra sistemas Windows.</p>
-<p><a href="https://thehackernews.com/2026/03/apt28-tied-to-cve-2026-21513-mshtml-0.html">Artículo</a></p>
+<p>El actor estatal ruso APT28 ha explotado activamente una vulnerabilidad de bypass de características de seguridad en MSHTML (CVSS 8.8) antes de que Microsoft lanzara el parche en febrero de 2026. La falla permite eludir mecanismos de protección críticos en aplicaciones basadas en Windows. Esta es una de las primeras confirmaciones de explotación en el wild por este grupo de espionaje establecido.</p>
+<p><a href="https://thehackernews.com/2026/03/apt28-tied-to-cve-2026-21513-mshtml-0.html">Artículo: APT28 Tied to CVE-2026-21513 MSHTML 0-Day</a></p>
 <hr />
-<h3>ScarCruft Despliega Malware USB y Zoho WorkDrive C2 para Redes Aisladas</h3>
+<h3>ScarCruft (Corea del Norte) Despliega Herramientas para Eludir Redes Aisladas</h3>
 <p><strong>Relevancia: CRÍTICA</strong></p>
-<p>El actor norcoreano ScarCruft está operando la campaña "Ruby Jumper" utilizando Zoho WorkDrive como infraestructura de comando y control y malware USB para eludir redes air-gapped. Representa una evolución táctica significativa en técnicas de persistencia y movimiento lateral contra infraestructura crítica.</p>
-<p><a href="https://thehackernews.com/2026/02/scarcruft-uses-zoho-workdrive-and-usb.html">Artículo</a></p>
+<p>El APT norcoreano ScarCruft ha lanzado nuevas herramientas en la campaña "Ruby Jumper" incluyendo: un backdoor que usa Zoho WorkDrive como C2 para eludir inspección de red, y malware para removible media que penetra redes aire-aisladas. Esta es una capacidad significativa para comprometer infraestructura crítica sin acceso directo a Internet.</p>
+<p><a href="https://thehackernews.com/2026/02/scarcruft-uses-zoho-workdrive-and-usb.html">Artículo: ScarCruft Uses Zoho WorkDrive and USB Malware to Breach Air-Gapped Networks</a></p>
 <hr />
-<h3>Lazarus (Contagious Interview) Publica 26 Paquetes npm Maliciosos con C2 en Pastebin</h3>
+<h3>Silver Dragon (Vinculado a APT41) Ataca Gobiernos con Cobalt Strike</h3>
 <p><strong>Relevancia: CRÍTICA</strong></p>
-<p>Actores norcoreanos han publicado 26 paquetes maliciosos en npm que impersonan herramientas de desarrollo, utilizando Pastebin como resolvedor de muertos para exfiltrar comandos C2. La campaña "Contagious Interview" mantiene actividad sostenida contra ecosistemas de desarrolladores con técnica de evasión mejorada.</p>
-<p><a href="https://thehackernews.com/2026/03/north-korean-hackers-publish-26-npm.html">Artículo</a></p>
+<p>El grupo APT vinculado a APT41 denominado Silver Dragon ha estado activo desde mediados de 2024 atacando entidades gubernamentales en Europa y Asia Sudoriental. Utiliza acceso inicial mediante exploitación de servidores expuestos a Internet y phishing, seguido de despliegue de Cobalt Strike y uso de Google Drive como canal de C2. Demuestra sofisticación en uso de servicios legítimos para evasión.</p>
+<p><a href="https://thehackernews.com/2026/03/apt41-linked-silver-dragon-targets.html">Artículo: APT41-Linked Silver Dragon Targets Governments Using Cobalt Strike and Google Drive C2</a></p>
 <hr />
-<h3>APT41 (Silver Dragon) Ataca Gobiernos Europeos y Sudeste Asiático</h3>
+<h3>Lazarus (Corea del Norte) Publica 26 Paquetes npm Maliciosos en "Contagious Interview"</h3>
 <p><strong>Relevancia: CRÍTICA</strong></p>
-<p>Grupo APT vinculado a APT41 conocido como Silver Dragon ha dirigido campañas contra entidades gubernamentales en Europa y Sudeste Asiático desde mediados de 2024. Utiliza Cobalt Strike y Google Drive como infraestructura C2, accediendo a través de servidores públicos y correos de phishing.</p>
-<p><a href="https://thehackernews.com/2026/03/apt41-linked-silver-dragon-targets.html">Artículo</a></p>
+<p>El APT norcoreano Lazarus ha publicado 26 paquetes npm falsos que se hacen pasar por herramientas de desarrollador, conteniendo un RAT multiplataforma. Utilizan Pastebin como "dead drop resolver" para obtener instrucciones de C2, eludiendo detección de repositorios. Esto continúa la campaña Contagious Interview con sofisticación en supply chain targeting.</p>
+<p><a href="https://thehackernews.com/2026/03/north-korean-hackers-publish-26-npm.html">Artículo: North Korean Hackers Publish 26 npm Packages Hiding Pastebin C2 for Cross-Platform RAT</a></p>
 <hr />
 <h3>SloppyLemming Ataca Gobiernos de Pakistán y Bangladesh</h3>
 <p><strong>Relevancia: ALTA</strong></p>
-<p>Entre enero 2025 y enero 2026, SloppyLemming ejecutó campañas contra entidades gubernamentales e infraestructura crítica en Pakistán y Bangladesh. Utilizó dos cadenas de ataque distintas desplegando malware BurrowShell y familias basadas en Rust contra objetivos sensibles regionales.</p>
-<p><a href="https://thehackernews.com/2026/03/sloppylemming-targets-pakistan-and.html">Artículo</a></p>
+<p>El clúster de actividad denominado SloppyLemming ha realizado ataques entre enero 2025 y enero 2026 contra entidades gubernamentales e infraestructura crítica en Pakistán y Bangladesh. Utiliza dos cadenas de ataque distintas entregando las familias de malware BurrowShell y un backdoor basado en Rust. Objetivo claro en gobiernos de Asia del Sur.</p>
+<p><a href="https://thehackernews.com/2026/03/sloppylemming-targets-pakistan-and.html">Artículo: SloppyLemming Targets Pakistan and Bangladesh Governments Using Dual Malware Chains</a></p>
 <hr />
-<h3>UAT-10027 Despliega Backdoor Dohdoor contra Educación y Salud de EE.UU.</h3>
+<h3>UAT-10027 Ataca Educación y Salud en EE.UU. con Backdoor Dohdoor</h3>
 <p><strong>Relevancia: ALTA</strong></p>
-<p>Cluster de actividad amenazante previamente no documentado dirigido a sectores educativo y sanitario estadounidenses desde diciembre 2025. Distribuye el backdoor "Dohdoor" que utiliza DNS-over-HTTPS para evasión y persistencia en infraestructura crítica nacional.</p>
-<p><a href="https://thehackernews.com/2026/02/uat-10027-targets-us-education-and.html">Artículo</a></p>
+<p>Un nuevo clúster de actividad no documentado previamente ataca sectores de educación y salud en EE.UU. desde diciembre 2025. El backdoor Dohdoor utiliza DNS-over-HTTPS (DoH) para C2, eludiendo inspección de tráfico tradicional. Objetivo en infraestructura crítica estadounidense con técnicas evasivas.</p>
+<p><a href="https://thehackernews.com/2026/02/uat-10027-targets-us-education-and.html">Artículo: UAT-10027 Targets U.S. Education and Healthcare with Dohdoor Backdoor</a></p>
 <hr />
-<h3>CyberStrikeAI Asistido por IA Ataca 55 Países contra FortiGate</h3>
+<h3>Ataques Hacktivistas por Conflicto Medio Oriente: 149 Ataques DDoS</h3>
 <p><strong>Relevancia: ALTA</strong></p>
-<p>Campaña de ataque asistida por inteligencia artificial contra aplicaciones FortiGate desplegada en 55 países. Los atacantes aprovecharon plataforma abierta de pruebas de seguridad nativa de IA llamada CyberStrikeAI para ejecutar campañas coordinadas contra infraestructura de red crítica.</p>
-<p><a href="https://thehackernews.com/2026/03/open-source-cyberstrikeai-deployed-in.html">Artículo</a></p>
+<p>Tras la campaña militar "Epic Fury" y "Roaring Lion" coordinada por EE.UU. e Israel contra Irán, se registraron 149 ataques DDoS hacktivistas contra 110 organizaciones en 16 países. Los grupos Keymous+ y DieNet condujeron el 70% de la actividad entre 28 febrero y 2 marzo. Actividad geopolíticamente motivada con alcance global.</p>
+<p><a href="https://thehackernews.com/2026/03/149-hacktivist-ddos-attacks-hit-110.html">Artículo: 149 Hacktivist DDoS Attacks Hit 110 Organizations in 16 Countries</a></p>
 <hr />
-<h3>Hackivistas DDoS Retaliadores Golpean 110 Organizaciones en 16 Países</h3>
+<h3>Campaña de Falso Soporte Técnico Entrega Havoc C2</h3>
 <p><strong>Relevancia: ALTA</strong></p>
-<p>149 ataques DDoS de hacktivistas contra 110 organizaciones en 16 países tras campaña militar coordinada EE.UU.-Israel contra Irán. Grupos Keymous+ y DieNet responsables de 70% de actividad entre 28 de febrero y 2 de marzo. Patrón de represalia organizada contra sector privado.</p>
-<p><a href="https://thehackernews.com/2026/03/149-hacktivist-ddos-attacks-hit-110.html">Artículo</a></p>
+<p>Actores de amenaza se han hecho pasar por soporte IT via spam de email seguido de llamadas telefónicas, entregando el framework C2 Havoc personalizado. Huntress identificó intrusiones en cinco organizaciones socio en febrero 2026. Precursor a exfiltración de datos o ataques ransomware.</p>
+<p><a href="https://thehackernews.com/2026/03/fake-tech-support-spam-deploys.html">Artículo: Fake Tech Support Spam Deploys Customized Havoc C2 Across Organizations</a></p>
 <hr />
-<h3>Ataque de Tech Support Falso Distribuye Havoc C2</h3>
+<h3>Paquetes Falsos de Laravel en Packagist Despliegan RAT Multiplataforma</h3>
 <p><strong>Relevancia: ALTA</strong></p>
-<p>Campaña identificada por Huntress en cinco organizaciones mediante spam de correo suplantando soporte IT, seguido de llamadas telefónicas para distribuir framework Havoc C2 como precursor a exfiltración de datos o ataques ransomware. Patrón social engineering coordinado.</p>
-<p><a href="https://thehackernews.com/2026/03/fake-tech-support-spam-deploys.html">Artículo</a></p>
+<p>Tres paquetes maliciosos disfrazados como utilidades Laravel en Packagist (lara-helper, simple-queue, lara-swagger) contienen un RAT multiplataforma funcional en Windows, macOS y Linux. Supply chain attack contra ecosistema PHP con bajo número de descargas pero alto riesgo potencial.</p>
+<p><a href="https://thehackernews.com/2026/03/fake-laravel-packages-on-packagist.html">Artículo: Fake Laravel Packages on Packagist Deploy RAT on Windows, macOS, and Linux</a></p>
 <hr />
-<h3>Suite Phishing Starkiller Evade MFA con Reverse Proxy AitM</h3>
+<h3>Ataque AI-Asistido contra FortiGate Utiliza CyberStrikeAI en 55 Países</h3>
 <p><strong>Relevancia: ALTA</strong></p>
-<p>Plataforma de phishing "Starkiller" operada por grupo "Jinkusu" proxifica páginas legítimas de login para evadir protecciones de autenticación multifactor. Ofrece dashboard para seleccionar marcas a impersonar o ingresar URLs reales, facilitando evasión de defensa en masa.</p>
-<p><a href="https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html">Artículo</a></p>
-<hr />
-<h3>Paquetes Falsos Laravel en Packagist Despliegan RAT Multiplataforma</h3>
-<p><strong>Relevancia: ALTA</strong></p>
-<p>Tres paquetes maliciosos en Packagist (nhattuanbl/lara-helper, nhattuanbl/simple-queue, nhattuanbl/lara-swagger) impersonan utilidades Laravel pero distribuyen RAT multiplataforma funcional en Windows, macOS y Linux. Supply chain attack contra ecosistema PHP.</p>
-<p><a href="https://thehackernews.com/2026/03/fake-laravel-packages-on-packagist.html">Artículo</a></p>
-<hr />
-<h3>Microsoft Advierte sobre Abuso de Redirección OAuth contra Gobiernos</h3>
-<p><strong>Relevancia: ALTA</strong></p>
-<p>Campañas de phishing dirigidas a organizaciones gubernamentales y sector público abusando mecanismos legítimos de redirección OAuth para evadir defensas convencionales. Los atacantes redirigen víctimas a infraestructura controlada sin robar tokens, eludiendo detección tradicional.</p>
-<p><a href="https://thehackernews.com/2026/03/microsoft-warns-oauth-redirect-abuse.html">Artículo</a></p>
+<p>Una campaña IA-asistida contra appliances Fortinet FortiGate en 55 países utilizó la plataforma de testing de seguridad open-source CyberStrikeAI. Demuestra uso ofensivo de herramientas IA-nativas legítimas para automatización de ataque a escala global. Impacto en infraestructura crítica de redes.</p>
+<p><a href="https://thehackernews.com/2026/03/open-source-cyberstrikeai-deployed-in.html">Artículo: Open-Source CyberStrikeAI Deployed in AI-Driven FortiGate Attacks Across 55 Countries</a></p>
 <hr />
 <h3>900+ Instancias Sangoma FreePBX Comprometidas con Web Shells</h3>
-<p><strong>Relevancia: MEDIA</strong></p>
-<p>Más de 900 instancias FreePBX permanecen infectadas con web shells de ataques que explotaron vulnerabilidad de inyección de comandos desde diciembre 2025. 401 instancias en EE.UU., presencia significativa en Brasil, Canadá, Alemania, Francia. Infraestructura de comunicaciones crítica comprometida.</p>
-<p><a href="https://thehackernews.com/2026/02/900-sangoma-freepbx-instances.html">Artículo</a></p>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>Más de 900 instancias de Sangoma FreePBX permanecen infectadas con web shells desde diciembre 2025, resultado de exploitación de vulnerabilidad de inyección de comandos. 401 instancias en EE.UU., seguidas de Brasil (51), Canadá (43), Alemania (40) y Francia (36). Infraestructura de comunicaciones crítica comprometida.</p>
+<p><a href="https://thehackernews.com/2026/02/900-sangoma-freepbx-instances.html">Artículo: 900+ Sangoma FreePBX Instances Compromised in Ongoing Web Shell Attacks</a></p>
 <hr />
 <h2>VULNERABILIDADES DESTACADAS</h2>
-<h3>CVE-2026-20127: Cisco SD-WAN Zero-Day - Autenticación Eludida</h3>
+<h3>CVE-2026-20127: Cisco SD-WAN Zero-Day Explotado Desde 2023</h3>
 <p><strong>Relevancia: CRÍTICA</strong></p>
-<p>Falla máxima severidad (CVSS 10.0) en Cisco Catalyst SD-WAN Controller y Manager. Permite a atacante no autenticado eludir autenticación y obtener acceso administrativo. Explotación activa documentada desde 2023. Afecta infraestructura WAN crítica empresarial.</p>
-<p><a href="https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html">Artículo</a></p>
+<p>Vulnerabilidad de severidad máxima (CVSS 10.0) en Cisco Catalyst SD-WAN Controller y Manager permite a atacante no autenticado bypasear autenticación y obtener acceso administrativo. Explotación activa confirmada desde 2023. Requiere parcheo inmediato en infraestructura de WAN.</p>
+<p><a href="https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html">Artículo: Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access</a></p>
 <hr />
-<h3>CVE-2026-22719: VMware Aria Operations RCE - Explotación Confirmada</h3>
+<h3>CVE-2026-22719: VMware Aria Operations RCE en Explotación Activa</h3>
 <p><strong>Relevancia: CRÍTICA</strong></p>
-<p>CISA añadió a catálogo KEV falla de inyección de comandos en Broadcom VMware Aria Operations (CVSS 8.1). Explotación activa confirmada en ataques de campo. Afecta sistemas de operaciones críticos en centros de datos y nubes.</p>
-<p><a href="https://thehackernews.com/2026/03/cisa-adds-actively-exploited-vmware.html">Artículo</a></p>
+<p>CISA ha añadido CVE-2026-22719 (CVSS 8.1, inyección de comandos) en Broadcom VMware Aria Operations al catálogo de vulnerabilidades explotadas conocidas. Explotación activa en el wild confirmada. Afecta a plataformas de operaciones y monitoreo críticas.</p>
+<p><a href="https://thehackernews.com/2026/03/cisa-adds-actively-exploited-vmware.html">Artículo: CISA Adds Actively Exploited VMware Aria Operations Flaw CVE-2026-22719 to KEV Catalog</a></p>
 <hr />
-<h3>CVE-2026-21513: MSHTML Feature Bypass - APT28 Explotación</h3>
-<p><strong>Relevancia: CRÍTICA</strong></p>
-<p>Omisión de característica de seguridad en MSHTML Framework (CVSS 8.8) con explotación confirmada por APT28 antes del parche de febrero. Afecta sistemas Windows críticos con impacto geopolítico documentado.</p>
-<p><a href="https://thehackernews.com/2026/02/apt28-tied-cve-2026-21513-mshtml-0.html">Artículo</a></p>
-<hr />
-<h3>CVE-2026-21385: Qualcomm Android Buffer Over-Read - Explotación en Campo</h3>
+<h3>Coruna iOS Exploit Kit: 23 Exploits en 5 Cadenas</h3>
 <p><strong>Relevancia: ALTA</strong></p>
-<p>Falla de corrupción de memoria en componente gráfico Qualcomm (CVSS 7.8) explotada en ataques contra dispositivos Android. Over-read de buffer permite acceso a datos sensibles del sistema.</p>
-<p><a href="https://thehackernews.com/2026/03/google-confirms-cve-2026-21385-in.html">Artículo</a></p>
+<p>Google identificó el exploit kit Coruna (aka CryptoWaters) con 23 exploits organizados en cinco cadenas completas de iOS, efectivo contra iOS 13.0 a 17.2.1. Desplegado en campañas de espionaje objetivo y ataques de robo crypto. No afecta las últimas versiones de iOS, pero representa sofisticación significativa en mobile targeting.</p>
+<p><a href="https://thehackernews.com/2026/03/coruna-ios-exploit-kit-uses-23-exploits.html">Artículo: Coruna iOS Exploit Kit Uses 23 Exploits Across Five Chains Targeting iOS 13–17.2.1</a></p>
 <hr />
-<h3>Coruna iOS Exploit Kit: 23 Exploits en Cinco Cadenas</h3>
+<h3>CVE-2026-21385: Componente Qualcomm Android Explotado</h3>
 <p><strong>Relevancia: ALTA</strong></p>
-<p>Google identificó kit de explotación "Coruna" (aka CryptoWaters) dirigido a iPhones con iOS 13-17.2.1. Contiene cinco cadenas completas de exploits iOS y 23 exploits individuales. Desplegado por múltiples actores en espionaje y ataques financieramente motivados. No afecta iOS más reciente.</p>
-<p><a href="https://thehackernews.com/2026/03/coruna-ios-exploit-kit-uses-23-exploits.html">Artículo</a></p>
+<p>Google confirmó explotación en el wild de CVE-2026-21385 (CVSS 7.8, buffer over-read en componente Graphics de Qualcomm). Corrupción de memoria por datos sin validación de espacio disponible. Afecta dispositivos Android ampliamente.</p>
+<p><a href="https://thehackernews.com/2026/03/google-confirms-cve-2026-21385-in.html">Artículo: Google Confirms CVE-2026-21385 in Qualcomm Android Component Exploited</a></p>
 <hr />
 <h2>ARTÍCULOS RECOMENDADOS</h2>
-<h3>Malware Go Falso Roba Contraseñas y Despliega Backdoor Rekoobe</h3>
+<h3>Suite de Phishing Starkiller Bypasea MFA con Reverse Proxy AitM</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>Grupo Jinkusu publicita suite Starkiller que proxifica páginas de login legítimas para bypasear protecciones MFA. Dashboard permite seleccionar marca a suplantar o ingresar URL real. Ataque man-in-the-middle contra autenticación multi-factor avanzada.</p>
+<p><a href="https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html">Artículo: Starkiller Phishing Suite Uses AitM Reverse Proxy to Bypass Multi-Factor Authentication</a></p>
+<hr />
+<h3>Microsoft Alerta: Abuso de Redirección OAuth contra Organismos Gubernamentales</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>Microsoft advierte campañas de phishing contra organismos público-gubernamentales que explotan mecanismos de redirección OAuth para bypasear defensas convencionales en email y navegadores. Entrega de malware sin robo de tokens via redirección a infraestructura controlada.</p>
+<p><a href="https://thehackernews.com/2026/03/microsoft-warns-oauth-redirect-abuse.html">Artículo: Microsoft Warns OAuth Redirect Abuse Delivers Malware to Government Targets</a></p>
+<hr />
+<h3>Módulo Malicioso Go Crypto Roba Contraseñas y Despliega Backdoor Rekoobe</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>Módulo Go github.com/xinfeisoft/crypto suplanta a golang.org/x/crypto legítimo, inyectando código que exfiltra secretos de terminal, crea acceso SSH persistente y entrega backdoor Rekoobe para Linux. Supply chain supply-side targeting de desarrolladores Go.</p>
+<p><a href="https://thehackernews.com/2026/02/malicious-go-crypto-module-steals.html">Artículo: Malicious Go Crypto Module Steals Passwords, Deploys Rekoobe Backdoor</a></p>
+<hr />
+<h3>Paquete NuGet Malicioso StripeApi.Net Suplanta Librería Oficial</h3>
 <p><strong>Relevancia: MEDIA</strong></p>
-<p>Módulo Go malicioso (github.com/xinfeisoft/crypto) que impersona librería legítima golang.org/x/crypto. Exfiltra secretos de terminal y proporciona acceso persistente SSH, distribuyendo backdoor Linux "Rekoobe". Supply chain attack contra desarrolladores Go.</p>
-<p><a href="https://thehackernews.com/2026/02/malicious-go-crypto-module-steals.html">Artículo</a></p>
+<p>Paquete StripeApi.Net en NuGet Gallery suplanta stripe.net legítimo (75M+ descargas) para robar tokens API del sector financiero. Impersonación de librería crítica en ecosistema .NET.</p>
+<p><a href="https://thehackernews.com/2026/02/malicious-stripeapi-nuget-package.html">Artículo: Malicious StripeApi NuGet Package Mimicked Official Library and Stole API Tokens</a></p>
 <hr />
-<h3>Paquete NuGet StripeApi Falso Roba Tokens API Financieros</h3>
+<h3>Herramientas Gaming Troyanizadas Distribuyen RAT Basado en Java</h3>
 <p><strong>Relevancia: MEDIA</strong></p>
-<p>StripeApi.Net en NuGet Gallery suplanta librería legítima Stripe.net (75M descargas). Intenta robar tokens API del sector financiero. Supply chain attack contra procesadores de pagos.</p>
-<p><a href="https://thehackernews.com/2026/02/malicious-stripeapi-nuget-package.html">Artículo</a></p>
+<p>Actores de amenaza distribuyen utilidades gaming troyanizadas via navegadores y plataformas de chat con descargador que prepara Java runtime y ejecuta JAR malicioso. Técnica de evasión usando portabilidad de Java.</p>
+<p><a href="https://thehackernews.com/2026/02/trojanized-gaming-tools-spread-java.html">Artículo: Trojanized Gaming Tools Spread Java-Based RAT via Browser and Chat Platforms</a></p>
 <hr />
-<h3>Repositorios Next.js Falsos Distribuyen Malware en Memoria contra Desarrolladores</h3>
+<h3>Bot Aeternum C2 Almacena Comandos Encriptados en Blockchain Polygon</h3>
 <p><strong>Relevancia: MEDIA</strong></p>
-<p>Campaña coordinada usando repositorios GitHub falsos como Next.js y evaluaciones técnicas para ejecutar malware en memoria y establecer acceso persistente. Explotación de flujos de trabajo normales de desarrolladores como vector de acceso inicial.</p>
-<p><a href="https://thehackernews.com/2026/02/fake-nextjs-repos-target-developers.html">Artículo</a></p>
-<hr />
-<hr />
-<p><strong>Nota metodológica:</strong> Este briefing prioriza amenazas de APTs establecidos, campañas ransomware, exploits de IA, ataques supply chain e infraestructura crítica. Se excluyen arrestos policiales, fraude cripto, vulnerabilidades sin explotación activa confirmada y noticias corporativas sin componente de ataque. Únicamente se incluyen datos explícitamente presentes en artículos proporcionados.</p>
+<p>Nuevo loader botnet Aeternum C2 utiliza infraestructura de comando-y-control basada en blockchain público Polygon para resistir takedown. Almacenamiento de instrucciones encriptadas en blockchain para resiliencia operacional.</p>
+<p>[Artículo: Aeternum C2 Botnet Stores Encrypted Commands on Polygon Blockchain to Evade Takedown](https://thehack</p>
     <div class="footer">CyberBrief · 25/02/2026 — 04/03/2026 · Generado el 04 de March de 2026</div>
 
     <script>

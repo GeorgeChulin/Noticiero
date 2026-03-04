@@ -28,7 +28,7 @@ URL: {a['url']}
                 "role": "user",
                 "content": f"""Eres un analista de ciberseguridad especializado en amenazas avanzadas. Analiza estos artículos y genera un briefing semanal en español, conciso y orientado a inteligencia estratégica.
 
-RESTRICCIÓN ABSOLUTA: El briefing debe contener un MÁXIMO DE 15 ITEMS EN TOTAL sumando las 3 secciones. NUNCA incluyas más de 15. Si hay más de 15 artículos relevantes, selecciona SOLO los 15 más importantes según las prioridades. Cuenta cada item antes de incluirlo.
+RESTRICCIÓN ABSOLUTA: Cada sección debe contener EXACTAMENTE 5 items, ni más ni menos. Son 3 secciones × 5 items = 15 items en total. NUNCA incluyas más de 5 items por sección. Si hay más artículos relevantes, selecciona SOLO los 5 más importantes para cada sección.
 
 PRIORIDADES (incluye siempre si aparecen):
 - Operaciones de APTs establecidos (Lazarus, APT28, APT29, Volt Typhoon, Sandworm, MuddyWater, ScarCruft, etc.)
@@ -48,8 +48,10 @@ DESCARTAR SIEMPRE:
 - Noticias corporativas sin impacto en seguridad
 
 FORMATO:
-- 3 secciones: Amenazas y Campañas Activas, Vulnerabilidades Destacadas, Artículos Recomendados
-- MÁXIMO 15 ITEMS EN TOTAL entre las 3 secciones. Distribución recomendada: ~6 amenazas, ~4 vulnerabilidades, ~5 artículos. Ajusta según relevancia pero NUNCA superes 15 en total.
+- 3 secciones con EXACTAMENTE 5 items cada una:
+  1. Amenazas y Campañas Activas (5 items)
+  2. Vulnerabilidades Destacadas (5 items)
+  3. Artículos Recomendados (5 items)
 - Cada item: título, nivel de relevancia (CRÍTICA/ALTA/MEDIA), 3 líneas de contexto estratégico, URL a la noticia
 - Sin tablas, sin listas anidadas
 - Solo información explícitamente presente en los artículos proporcionados
@@ -59,7 +61,7 @@ FORMATO:
 
 IMPORTANTE: Solo incluye información que aparezca explícitamente en los artículos proporcionados. No añadas CVEs ni datos que no estén en las fuentes.
 
-RECUERDA: MÁXIMO 15 ITEMS EN TOTAL. Si generas más de 15, estás incumpliendo las instrucciones.
+RECUERDA: EXACTAMENTE 5 ITEMS POR SECCIÓN. Cuenta los items de cada sección antes de finalizar. Si una sección tiene más de 5, elimina los menos relevantes.
 
 ARTÍCULOS:
 {contenido}"""

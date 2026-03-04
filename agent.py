@@ -20,8 +20,8 @@ URL: {a['url']}
 """
 
     respuesta = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        #model="claude-sonnet-4-6",
+        #model="claude-haiku-4-5-20251001",
+        model="claude-sonnet-4-6",
         max_tokens=4000,
         messages=[
             {
@@ -55,6 +55,7 @@ FORMATO:
 - Separa cada item con una línea en blanco para que sean visualmente distintos
 - El título de cada item debe ir en su propia línea como ### título
 
+IMPORTANTE: incluye 15 items en total como máximo.
 IMPORTANTE: Solo incluye información que aparezca explícitamente en los artículos proporcionados. No añadas CVEs ni datos que no estén en las fuentes.
 
 ARTÍCULOS:

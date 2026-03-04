@@ -28,6 +28,8 @@ URL: {a['url']}
                 "role": "user",
                 "content": f"""Eres un analista de ciberseguridad especializado en amenazas avanzadas. Analiza estos artículos y genera un briefing semanal en español, conciso y orientado a inteligencia estratégica.
 
+RESTRICCIÓN ABSOLUTA: El briefing debe contener un MÁXIMO DE 15 ITEMS EN TOTAL sumando las 3 secciones. NUNCA incluyas más de 15. Si hay más de 15 artículos relevantes, selecciona SOLO los 15 más importantes según las prioridades. Cuenta cada item antes de incluirlo.
+
 PRIORIDADES (incluye siempre si aparecen):
 - Operaciones de APTs establecidos (Lazarus, APT28, APT29, Volt Typhoon, Sandworm, MuddyWater, ScarCruft, etc.)
 - Campañas de ransomware activas
@@ -47,16 +49,17 @@ DESCARTAR SIEMPRE:
 
 FORMATO:
 - 3 secciones: Amenazas y Campañas Activas, Vulnerabilidades Destacadas, Artículos Recomendados
-- Máximo 15 items en total, priorizando según las prioridades indicadas
-- Cada item: título,  nivel de relevancia (CRÍTICA/ALTA/MEDIA), 3 líneas de contexto estratégico, URL a la noticia
+- MÁXIMO 15 ITEMS EN TOTAL entre las 3 secciones. Distribución recomendada: ~6 amenazas, ~4 vulnerabilidades, ~5 artículos. Ajusta según relevancia pero NUNCA superes 15 en total.
+- Cada item: título, nivel de relevancia (CRÍTICA/ALTA/MEDIA), 3 líneas de contexto estratégico, URL a la noticia
 - Sin tablas, sin listas anidadas
 - Solo información explícitamente presente en los artículos proporcionados
 - URLs: usa siempre formato markdown: [Articulo](https://url.com)
 - Separa cada item con una línea en blanco para que sean visualmente distintos
 - El título de cada item debe ir en su propia línea como ### título
 
-IMPORTANTE: incluye 15 items en total como máximo.
 IMPORTANTE: Solo incluye información que aparezca explícitamente en los artículos proporcionados. No añadas CVEs ni datos que no estén en las fuentes.
+
+RECUERDA: MÁXIMO 15 ITEMS EN TOTAL. Si generas más de 15, estás incumpliendo las instrucciones.
 
 ARTÍCULOS:
 {contenido}"""

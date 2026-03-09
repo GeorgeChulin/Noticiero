@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberBrief 02/03/2026 — 09/03/2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:          #f0f4f8;
+            --surface:     #ffffff;
+            --border:      #e2e8f0;
+            --blue-900:    #0f2d5c;
+            --blue-600:    #2563eb;
+            --blue-100:    #dbeafe;
+            --blue-50:     #eff6ff;
+            --text:        #0f172a;
+            --text-2:      #475569;
+            --text-3:      #94a3b8;
+            --critica:     #dc2626;
+            --critica-bg:  #fff1f1;
+            --alta:        #d97706;
+            --alta-bg:     #fffbeb;
+            --media:       #16a34a;
+            --media-bg:    #f0fdf4;
+            --radius:      10px;
+            --shadow:      0 1px 3px rgba(0,0,0,0.07), 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Geist', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 40px 16px 64px;
+            max-width: 820px;
+            margin: 0 auto;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            font-size: 0.7rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: 6px;
+        }
+
+        h1 + p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--blue-900);
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+
+        h1 + p + p {
+            font-size: 0.85rem;
+            color: var(--text-3);
+            font-family: 'Geist Mono', monospace;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--text-3);
+            margin: 40px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.4;
+            margin-bottom: 6px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            margin-bottom: 10px;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.15s ease, border-color 0.15s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 2px 8px rgba(37,99,235,0.08), 0 8px 24px rgba(0,0,0,0.07);
+            border-color: var(--blue-100);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 3px 9px;
+            border-radius: 999px;
+            margin-bottom: 10px;
+        }
+
+        .badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        .badge-critica  { background: var(--critica-bg); color: var(--critica); }
+        .badge-alta     { background: var(--alta-bg);    color: var(--alta);    }
+        .badge-media    { background: var(--media-bg);   color: var(--media);   }
+        .badge-default  { background: var(--blue-50);    color: var(--blue-600);}
+
+        p {
+            font-size: 0.875rem;
+            color: var(--text-2);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        strong { color: var(--text); font-weight: 500; }
+
+        a {
+            color: var(--blue-600);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        a::after {
+            content: '↗';
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        li { margin: 4px 0 4px 16px; font-size: 0.85rem; }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 16px 0;
+        }
+
+        .footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--text-3);
+            text-align: center;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.04em;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛡️ Briefing Semanal de Ciberseguridad — Semana del 2 al 9 de marzo de 2026</h1>
+<hr />
+<h2>1. Amenazas y Campañas Activas</h2>
+<h3>APT28 despliega BadPaw/MeowMeow contra Ucrania y explota 0-day MSHTML</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+APT28 (Fancy Bear) continúa operaciones activas en múltiples frentes: una campaña de phishing contra entidades ucranianas entrega dos familias de malware inéditas (BadPaw loader + MeowMeow backdoor), mientras investigadores de Akamai vinculan al grupo con la explotación pre-patch del 0-day CVE-2026-21513 (CVSS 8.8) en el framework MSHTML. La combinación de nuevas herramientas propias y explotación de vulnerabilidades críticas de Windows indica una operación sostenida y sofisticada. Las organizaciones en el espacio post-soviético y aliados de la OTAN deben elevar la vigilancia sobre archivos HTA y vectores de phishing en idioma ucraniano.
+<a href="https://thehackernews.com/2026/03/apt28-linked-campaign-deploys-badpaw.html">Artículo</a></p>
+<hr />
+<h3>MuddyWater compromete redes de EE.UU. con nuevo backdoor Dindoor</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+El grupo iraní MuddyWater (Seedworm) ha sido detectado con presencia activa en redes de bancos, aeropuertos y organizaciones sin ánimo de lucro en suelo estadounidense, además de la filial israelí de una empresa de software. El despliegue del backdoor inédito Dindoor sugiere renovación activa del arsenal del grupo. La selección de objetivos —infraestructura financiera y de transporte— indica prioridad de acceso persistente para posibles operaciones de sabotaje o espionaje en un contexto de tensión geopolítica con Irán.
+<a href="https://thehackernews.com/2026/03/iran-linked-muddywater-hackers-target.html">Artículo</a></p>
+<hr />
+<h3>Transparent Tribe emplea IA para producción masiva de implantes contra India</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+El actor pakistaní Transparent Tribe (APT36) ha adoptado herramientas de codificación asistidas por IA para generar volúmenes elevados de implantes malware escritos en lenguajes poco comunes (Nim, Zig, Crystal), dificultando la detección por soluciones de seguridad tradicionales. La estrategia sacrifica sofisticación por volumen y evasión, usando servicios de confianza como C2. Supone un cambio de paradigma operacional relevante: la IA democratiza la producción de malware a escala industrial para actores de nivel medio.
+<a href="https://thehackernews.com/2026/03/transparent-tribe-uses-ai-to-mass.html">Artículo</a></p>
+<hr />
+<h3>CyberStrikeAI impulsa campaña de IA ofensiva contra FortiGate en 55 países</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Team Cymru ha identificado el uso de la plataforma open-source CyberStrikeAI en una campaña activa contra dispositivos Fortinet FortiGate desplegada en 55 países. Es la primera campaña documentada a gran escala donde un framework de pentesting nativo de IA se usa como herramienta ofensiva real en producción. El alcance geográfico masivo y el uso de infraestructura de red perimetral como objetivo sugieren motivación de acceso inicial a redes corporativas y gubernamentales a escala global.
+<a href="https://thehackernews.com/2026/03/open-source-cyberstrikeai-deployed-in.html">Artículo</a></p>
+<hr />
+<h3>Termite/Velvet Tempest combina ClickFix y CastleRAT como precursor de ransomware</h3>
+<p><strong>Relevancia: ALTA</strong>
+Los actores de ransomware rastreados como Velvet Tempest (operadores de Termite) están empleando la técnica ClickFix junto a utilidades legítimas de Windows para desplegar DonutLoader y el backdoor CastleRAT. El patrón encaja con el modelo de acceso inicial + post-explotación previo al despliegue de ransomware, y se superpone con la campaña ClickFix de Lumma Stealer revelada por Microsoft. La reutilización de técnicas ClickFix por múltiples actores, incluyendo grupos de ransomware, confirma su consolidación como vector de ingeniería social de alto rendimiento.
+<a href="https://www.bleepingcomputer.com/news/security/termite-ransomware-breaches-linked-to-clickfix-castlerat-attacks/">Artículo</a></p>
+<hr />
+<h2>2. Vulnerabilidades Destacadas</h2>
+<h3>CVE-2026-21513 — MSHTML 0-day explotado por APT28 antes del parche (CVSS 8.8)</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Vulnerabilidad de bypass de mecanismo de protección en el framework MSHTML de Windows, explotada activamente por APT28 antes de su corrección en el Patch Tuesday de febrero de 2026. Permite a un atacante no autenticado eludir defensas de seguridad, con potencial de ejecución de código. La atribución a un actor de estado ruso y su uso previo al parche confirman su clasificación como 0-day estratégico; los entornos Windows que no hayan aplicado el parche de febrero siguen en riesgo activo.
+<a href="https://thehackernews.com/2026/03/apt28-tied-to-cve-2026-21513-mshtml-0.html">Artículo</a></p>
+<hr />
+<h3>CVE-2017-7921 y Rockwell Automation — CVSS 9.8 añadidos al KEV de CISA</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+CISA ha incorporado al catálogo KEV dos vulnerabilidades críticas con puntuación CVSS 9.8: una de autenticación incorrecta en cámaras Hikvision (CVE-2017-7921, con casi una década de antigüedad) y otra en productos Rockwell Automation. Su inclusión en el KEV confirma explotación activa en curso. La presencia de un CVE de 2017 en explotación activa en 2026 evidencia la persistencia de dispositivos IoT y OT sin parchear en entornos de infraestructura crítica, especialmente en sectores industrial y de videovigilancia.
+<a href="https://thehackernews.com/2026/03/hikvision-and-rockwell-automation-cvss-98.html">Artículo</a></p>
+<hr />
+<h3>CVE-2026-22719 — Command Injection en VMware Aria Operations explotado activamente (CVSS 8.1)</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+CISA ha añadido al KEV esta vulnerabilidad de inyección de comandos en VMware Aria Operations (Broadcom), con explotación confirmada en el entorno real. Permite a un atacante con acceso de red ejecutar comandos arbitrarios en la plataforma de gestión de infraestructura. Los entornos VMware son objetivos prioritarios para actores de estado y ransomware por el acceso privilegiado que otorgan; las agencias federales tienen plazo limitado para aplicar el parche.
+<a href="https://thehackernews.com/2026/03/cisa-adds-actively-exploited-vmware.html">Artículo</a></p>
+<hr />
+<h3>CVE-2026-21385 — Buffer over-read en componente Qualcomm Android explotado in-the-wild (CVSS 7.8)</h3>
+<p><strong>Relevancia: ALTA</strong>
+Google ha confirmado explotación activa de esta vulnerabilidad de corrupción de memoria en el componente Graphics de Qualcomm presente en dispositivos Android. La falla permite corrupción de memoria mediante datos sin validación de espacio de buffer, con potencial de escalada de privilegios o ejecución de código. Dado el ecosistema fragmentado de Android y los largos ciclos de actualización de fabricantes, una proporción significativa de dispositivos afectados permanecerá vulnerable durante meses.
+<a href="https://thehackernews.com/2026/03/google-confirms-cve-2026-21385-in.html">Artículo</a></p>
+<hr />
+<h3>Cisco Catalyst SD-WAN Manager — Dos CVEs con explotación activa confirmada</h3>
+<p><strong>Relevancia: ALTA</strong>
+Cisco ha confirmado la explotación activa de dos vulnerabilidades en Catalyst SD-WAN Manager: CVE-2026-20122 (sobreescritura arbitraria de archivos, CVSS 7.1) y una segunda falla adicional. Ambas afectan a un componente crítico de gestión de red WAN empresarial. Los dispositivos de gestión SD-WAN son objetivos de alto valor por su posición central en la red corporativa; la explotación exitosa puede derivar en movimiento lateral, persistencia o interrupción de servicios.
+<a href="https://thehackernews.com/2026/03/cisco-confirms-active-exploitation-of.html">Artículo</a></p>
+<hr />
+<h2>3. Artículos Recomendados</h2>
+<h3>Grupo UAT-9244 (vinculado a FamousSparrow/China) ataca telecomunicaciones sudamericanas con tres implants</h3>
+<p><strong>Relevancia: ALTA</strong>
+Cisco Talos documenta una campaña APT china activa desde 2024 contra infraestructura de telecomunicaciones en Sudamérica, empleando tres implantes diferenciados (TernDoor, PeerTime, BruteEntry) para Windows, Linux y dispositivos de red perimetral. La vinculación con FamousSparrow amplía el radio de acción conocido del cluster. El targeting de telcos en una región históricamente menos cubierta por inteligencia de amenazas APT chinas representa un desplazamiento estratégico relevante en las prioridades de recolección de Beijing.
+<a href="https://thehackernews.com/2026/03/china-linked-hackers-use-terndoor.html">Artículo</a></p>
+<hr />
+<h3>Silver Dragon (vinculado a APT41) ataca gobiernos europeos y del Sudeste Asiático con Cobalt Strike y C2 en Google Drive</h3>
+<p><strong>Relevancia: ALTA</strong>
+Check Point Research documenta al grupo Silver Dragon, vinculado a APT41, explotando servidores públicos y realizando spear-phishing contra entidades gubernamentales en Europa y Sudeste Asiático desde mediados de 2024. El uso de Google Drive como infraestructura C2 dificulta la detección mediante análisis de tráfico de red convencional. La combinación de un actor con motivación tanto de espionaje como de crimen financiero (característico de APT41) y técnicas de blend-in con servicios legítimos eleva el riesgo operacional.
+<a href="https://thehackernews.com/2026/03/apt41-linked-silver-dragon-targets.html">Artículo</a></p>
+<hr />
+<h3>Microsoft alerta: actores de amenazas abusan de IA en todas las fases del ciclo de ataque</h3>
+<p><strong>Relevancia: ALTA</strong>
+Microsoft publica análisis confirmando que múltiples grupos de amenazas están integrando IA en todas las fases del ciclo de ataque: reconocimiento, generación de phishing, evasión y escalada. El informe trasciende casos aislados para establecer una tendencia estructural en el ecosistema de amenazas. Junto con los casos de Transparent Tribe y CyberStrikeAI documentados esta semana, confirma que la IA ofensiva ha dejado de ser un concepto teórico para convertirse en capacidad operacional desplegada por actores de distintos niveles.
+<a href="https://www.bleepingcomputer.com/news/security/microsoft-hackers-abusing-ai-at-every-stage-of-cyberattacks/">Artículo</a></p>
+<hr />
+<h3>Coruna iOS Exploit Kit: 23 exploits en 5 cadenas contra iOS 13–17.2.1, con CISA KEV activo</h3>
+<p><strong>Relevancia: ALTA</strong>
+Google Threat Intelligence Group documenta Coruna (aka CryptoWaters), un exploit kit sofisticado con cinco cadenas completas de explotación y 23 exploits individuales dirigidos a versiones iOS 13 a 17.2.1. CISA ha ordenado a agencias federales parchear las fallas asociadas citando uso en operaciones de ciberespionaje. La sofisticación técnica del kit —comparable a herramientas de mercado de exploits comerciales— y su uso confirmado en campañas activas lo sitúan como amenaza de primer nivel para dispositivos iOS no actualizados.
+<a href="https://thehackernews.com/2026/03/coruna-ios-exploit-kit-uses-23-exploits.html">Artículo</a></p>
+<hr />
+<h3>Fake Laravel packages en Packagist distribuyen RAT multiplataforma en ataque a supply chain</h3>
+<p><strong>Relevancia: ALTA</strong>
+Investigadores han identificado paquetes PHP maliciosos en el repositorio Packagist haciéndose pasar por utilidades Laravel legítimas para distribuir un RAT funcional en Windows, macOS y Linux. El vector afecta directamente a la cadena de suministro de software PHP/Laravel, ecosistema ampliamente usado en aplicaciones web empresariales. Aunque los contadores de descarga son bajos en el momento del análisis, este tipo de ataques tiene potencial de propagación exponencial al integrarse en proyectos con muchas dependencias.
+<a href="https://thehackernews.com/2026/03/fake-laravel-packages-on-packagist.html">Artículo</a></p>
+<hr />
+<p><em>Briefing generado con base en fuentes públicas de inteligencia de amenazas. Semana del 2 al 9 de marzo de 2026.</em></p>
+    <div class="footer">CyberBrief · 02/03/2026 — 09/03/2026 · Generado el 09 de March de 2026</div>
+
+    <script>
+        // Envolver cada h3 y su contenido siguiente en una card
+        document.querySelectorAll('h3').forEach(h3 => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            h3.parentNode.insertBefore(card, h3);
+            let node = h3;
+            while (node) {
+                const next = node.nextSibling;
+                card.appendChild(node);
+                node = next;
+                if (!node) break;
+                if (node.nodeName === 'H3' || node.nodeName === 'H2' || node.nodeName === 'H1') break;
+            }
+        });
+
+        // Convertir "Nivel de Relevancia: X" en badges con color
+        document.querySelectorAll('p').forEach(p => {
+            const text = p.textContent.trim();
+            if (!text.startsWith('Nivel de Relevancia:')) return;
+            const nivel = text.split(':')[1]?.trim().toUpperCase() || '';
+            const clases = {
+                'CRÍTICA': 'badge-critica',
+                'CRITICA': 'badge-critica',
+                'ALTA':    'badge-alta',
+                'MEDIA':   'badge-media',
+            };
+            const cls = clases[nivel] || 'badge-default';
+            const badge = document.createElement('span');
+            badge.className = `badge ${cls}`;
+            badge.textContent = nivel;
+            p.replaceWith(badge);
+        });
+    </script>
+</body>
+</html>

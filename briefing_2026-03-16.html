@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberBrief 09/03/2026 — 16/03/2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:          #f0f4f8;
+            --surface:     #ffffff;
+            --border:      #e2e8f0;
+            --blue-900:    #0f2d5c;
+            --blue-600:    #2563eb;
+            --blue-100:    #dbeafe;
+            --blue-50:     #eff6ff;
+            --text:        #0f172a;
+            --text-2:      #475569;
+            --text-3:      #94a3b8;
+            --critica:     #dc2626;
+            --critica-bg:  #fff1f1;
+            --alta:        #d97706;
+            --alta-bg:     #fffbeb;
+            --media:       #16a34a;
+            --media-bg:    #f0fdf4;
+            --radius:      10px;
+            --shadow:      0 1px 3px rgba(0,0,0,0.07), 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Geist', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 40px 16px 64px;
+            max-width: 820px;
+            margin: 0 auto;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            font-size: 0.7rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: 6px;
+        }
+
+        h1 + p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--blue-900);
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+
+        h1 + p + p {
+            font-size: 0.85rem;
+            color: var(--text-3);
+            font-family: 'Geist Mono', monospace;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--text-3);
+            margin: 40px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.4;
+            margin-bottom: 6px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            margin-bottom: 10px;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.15s ease, border-color 0.15s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 2px 8px rgba(37,99,235,0.08), 0 8px 24px rgba(0,0,0,0.07);
+            border-color: var(--blue-100);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 3px 9px;
+            border-radius: 999px;
+            margin-bottom: 10px;
+        }
+
+        .badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        .badge-critica  { background: var(--critica-bg); color: var(--critica); }
+        .badge-alta     { background: var(--alta-bg);    color: var(--alta);    }
+        .badge-media    { background: var(--media-bg);   color: var(--media);   }
+        .badge-default  { background: var(--blue-50);    color: var(--blue-600);}
+
+        p {
+            font-size: 0.875rem;
+            color: var(--text-2);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        strong { color: var(--text); font-weight: 500; }
+
+        a {
+            color: var(--blue-600);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        a::after {
+            content: '↗';
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        li { margin: 4px 0 4px 16px; font-size: 0.85rem; }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 16px 0;
+        }
+
+        .footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--text-3);
+            text-align: center;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.04em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Briefing Semanal de Ciberseguridad — Semana del 9 al 16 de Marzo de 2026</h1>
+<hr />
+<h2>1. Amenazas y Campañas Activas</h2>
+<hr />
+<h3>APT28 despliega BEARDSHELL y COVENANT contra militares ucranianos</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+El grupo ruso APT28 (Fancy Bear) utiliza dos nuevos implantes desde abril de 2024 para vigilancia persistente de personal militar ucraniano. La campaña refleja continuidad operativa ofensiva en el contexto del conflicto y capacidad para mantener acceso prolongado en redes de alto valor. El reporte confirma el uso sostenido de herramientas custom diseñadas para evadir detección.
+<a href="https://thehackernews.com/2026/03/apt28-uses-beardshell-and-covenant.html">Artículo</a></p>
+<hr />
+<h3>Hackers con vínculos iraníes ejecutan ataque wiper contra Stryker (medtech)</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Un grupo hacktivista ligado a agencias de inteligencia iraníes reivindica un ataque de borrado destructivo contra Stryker, empresa médico-tecnológica global, forzando el envío a casa de más de 5.000 trabajadores en Irlanda. Este ataque a infraestructura crítica del sector salud eleva significativamente el perfil de riesgo para empresas medtech occidentales. El uso de wipers como arma geopolítica consolida una tendencia preocupante más allá del espionaje tradicional.
+<a href="https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/">Artículo</a></p>
+<hr />
+<h3>Espionaje chino CL-STA-1087 contra militares del Sudeste Asiático con AppleChris y MemFun</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Una operación de ciberespionaje atribuida con confianza moderada-alta a China lleva activa desde al menos 2020, con foco en organizaciones militares del Sudeste Asiático. El uso de familias de malware inéditas (AppleChris y MemFun) y la "paciencia operacional estratégica" documentada por Unit 42 sugieren una operación de inteligencia de largo aliento. La persistencia temporal y el objetivo militar elevan el riesgo geopolítico en la región.
+<a href="https://thehackernews.com/2026/03/chinese-hackers-target-southeast-asian.html">Artículo</a></p>
+<hr />
+<h3>GlassWorm escala ataque supply chain abusando 72 extensiones en Open VSX</h3>
+<p><strong>Relevancia: ALTA</strong>
+La nueva iteración de GlassWorm representa una escalada significativa al abusar de los campos <code>extensionPack</code> y <code>extensionDependencies</code> del registro Open VSX, convirtiendo extensiones aparentemente legítimas en vectores de infección transitiva. Este mecanismo permite al actor comprometer desarrolladores sin que cada extensión maliciosa requiera embeber directamente el loader. La amplitud del impacto (72 extensiones) y el perfil de las víctimas —entornos de desarrollo— hacen de este ataque una amenaza de alto riesgo para cadenas CI/CD.
+<a href="https://thehackernews.com/2026/03/glassworm-supply-chain-attack-abuses-72.html">Artículo</a></p>
+<hr />
+<h3>Hive0163 usa malware Slopoly generado por IA para acceso persistente en ataques de ransomware</h3>
+<p><strong>Relevancia: ALTA</strong>
+El actor financieramente motivado Hive0163 ha desplegado Slopoly, un framework de malware desarrollado con asistencia de IA, como mecanismo de persistencia previo a la ejecución de ransomware. El caso confirma que la IA ofensiva ha cruzado el umbral de lo experimental a lo operacional, reduciendo drásticamente el tiempo de desarrollo de herramientas maliciosas. Esta tendencia democratiza las capacidades ofensivas y anticipa un incremento en la velocidad y volumen de nuevas familias de malware.
+<a href="https://thehackernews.com/2026/03/hive0163-uses-ai-assisted-slopoly.html">Artículo</a></p>
+<hr />
+<h2>2. Vulnerabilidades Destacadas</h2>
+<hr />
+<h3>CVE-2026-3909 y CVE-2026-2026-3910 — Chrome zero-days explotados en Skia y V8</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Google ha parcheado dos vulnerabilidades zero-day de severidad alta explotadas activamente en Chrome: un out-of-bounds write en Skia (CVSS 8.8) y una falla en el motor V8. Ambas permiten a un atacante remoto ejecutar código arbitrario mediante contenido HTML manipulado, sin requerir interacción privilegiada del usuario. La explotación confirmada en el wild exige aplicación inmediata de las actualizaciones en entornos empresariales.
+<a href="https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html">Artículo</a></p>
+<hr />
+<h3>Veeam Backup &amp; Replication — 7 vulnerabilidades críticas con RCE (CVSS hasta 9.9)</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Veeam ha publicado parches para siete fallas críticas en su solución de backup empresarial, incluyendo CVE-2026-21666 (CVSS 9.9) que permite a un usuario de dominio autenticado ejecutar código remotamente en el servidor de backup. Dado que Veeam es un componente central en estrategias de recuperación ante ransomware, su compromiso puede anular completamente las capacidades de respuesta de una organización. La explotación de estas fallas convertiría las soluciones de backup en un vector de ataque crítico.
+<a href="https://thehackernews.com/2026/03/veeam-patches-7-critical-backup.html">Artículo</a></p>
+<hr />
+<h3>CVE-2025-68613 — RCE en n8n con explotación activa confirmada por CISA (CVSS 9.9)</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+CISA ha incorporado esta vulnerabilidad de inyección de expresiones en la plataforma de automatización n8n a su catálogo KEV, con 24.700 instancias expuestas a Internet. La explotación activa confirmada, combinada con el altísimo número de instancias accesibles, representa una superficie de ataque masiva con capacidad de RCE no autenticado. Las organizaciones que utilizan n8n en flujos de trabajo automatizados —incluyendo pipelines de datos y orquestación de APIs— deben priorizar el parcheo con carácter urgente.
+<a href="https://thehackernews.com/2026/03/cisa-flags-actively-exploited-n8n-rce.html">Artículo</a></p>
+<hr />
+<h3>CrackArmor — 9 vulnerabilidades en Linux AppArmor permiten escalada a root y bypass de contenedores</h3>
+<p><strong>Relevancia: ALTA</strong>
+Qualys TRU ha divulgado nueve fallas de tipo "confused deputy" en el módulo AppArmor del kernel Linux que permiten a usuarios no privilegiados escalar a root y eludir el aislamiento de contenedores. El impacto afecta directamente a entornos cloud-native y plataformas de contenedores que dependen de AppArmor como capa de seguridad obligatoria. La explotación por usuarios sin privilegios en entornos multi-tenant eleva significativamente el riesgo en infraestructuras compartidas.
+<a href="https://thehackernews.com/2026/03/nine-crackarmor-flaws-in-linux-apparmor.html">Artículo</a></p>
+<hr />
+<h3>FortiGate NGFW explotado activamente para exfiltrar credenciales y mapear redes</h3>
+<p><strong>Relevancia: ALTA</strong>
+Actores de amenaza están explotando vulnerabilidades recientemente divulgadas o credenciales débiles en firewalls FortiGate para extraer archivos de configuración con credenciales de cuentas de servicio y topología de red. El abuso de dispositivos perimetrales de seguridad como punto de entrada inicial es especialmente grave dado el nivel de acceso que ofrecen. Las organizaciones con FortiGate expuestos sin parchear o con credenciales por defecto deben considerar un escenario de compromiso activo.
+<a href="https://thehackernews.com/2026/03/fortigate-devices-exploited-to-breach.html">Artículo</a></p>
+<hr />
+<h2>3. Artículos Recomendados</h2>
+<hr />
+<h3>UNC6426 explota supply chain de npm (paquete nx) para obtener acceso admin en AWS en 72 horas</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Este caso documenta cómo el robo de un token de GitHub derivado de un ataque de supply chain al paquete npm <code>nx</code> permitió a UNC6426 comprometer completamente un entorno cloud en menos de 72 horas. El encadenamiento supply chain → robo de token → escalada cloud demuestra la velocidad y el alcance real de este vector de ataque. Es un caso de estudio esencial para equipos que gestionan pipelines CI/CD con dependencias de npm y acceso a entornos cloud.
+<a href="https://thehackernews.com/2026/03/unc6426-exploits-nx-npm-supply-chain.html">Artículo</a></p>
+<hr />
+<h3>Investigadores engañan al navegador IA Comet de Perplexity para ejecutar phishing en menos de 4 minutos</h3>
+<p><strong>Relevancia: ALTA</strong>
+Guardio demuestra que los navegadores agénticos con IA pueden ser manipulados mediante prompt injection para bajar sus barreras de seguridad y ejecutar acciones de phishing de manera autónoma. El ataque explota la tendencia del modelo a razonar sus propias acciones, volviéndola en su contra. Este hallazgo tiene implicaciones estratégicas directas para organizaciones que están evaluando o desplegando agentes IA para automatización de tareas web.
+<a href="https://thehackernews.com/2026/03/researchers-trick-perplexitys-comet-ai.html">Artículo</a></p>
+<hr />
+<h3>Poland's Nuclear Research Centre targeted by cyberattack</h3>
+<p><strong>Relevancia: ALTA</strong>
+El Centro Nacional de Investigación Nuclear de Polonia (NCBJ) fue objetivo de un ciberataque contra su infraestructura IT, bloqueado antes de causar impacto operativo. El ataque a una institución de investigación nuclear ilustra la tendencia persistente de actores avanzados a sondear infraestructuras críticas científicas y energéticas en Europa del Este. El contexto geopolítico actual hace de este tipo de objetivos un indicador de reconocimiento estratégico a largo plazo.
+<a href="https://www.bleepingcomputer.com/news/security/polands-nuclear-research-centre-targeted-by-cyberattack/">Artículo</a></p>
+<hr />
+<h3>KadNap infecta más de 14.000 dispositivos edge (routers Asus) para botnet proxy encubierta</h3>
+<p><strong>Relevancia: ALTA</strong>
+El malware KadNap, activo desde agosto de 2025, ha comprometido más de 14.000 routers Asus —mayoritariamente en EE.UU.— para construir una infraestructura de proxy que enruta tráfico malicioso. La escala y la naturaleza de los dispositivos comprometidos (edge devices residenciales y SOHO) dificultan la detección y el bloqueo por parte de defensores corporativos. Este tipo de botnets IoT son frecuentemente usadas por APTs para anonimizar operaciones, lo que eleva su relevancia estratégica más allá del crimen común.
+<a href="https://thehackernews.com/2026/03/kadnap-malware-infects-14000-edge.html">Artículo</a></p>
+<hr />
+<h3>Storm-2561 distribuye clientes VPN troyanizados mediante SEO poisoning para robo de credenciales</h3>
+<p><strong>Relevancia: ALTA</strong>
+Microsoft documenta una campaña activa en la que Storm-2561 redirige búsquedas de software empresarial legítimo (Ivanti, Cisco, Fortinet) hacia archivos ZIP maliciosos que instalan troyanos con firma digital válida. La combinación de SEO poisoning con binarios firmados permite eludir controles de reputación y herramientas de detección basadas en firma. El foco en credenciales VPN corporativas convierte a este actor en un riesgo directo de acceso inicial para entornos empresariales.
+<a href="https://thehackernews.com/2026/03/storm-2561-spreads-trojan-vpn-clients.html">Artículo</a></p>
+<hr />
+<p><em>Briefing generado con base en fuentes públicas del período 9–16 de marzo de 2026. Clasificación de relevancia basada en impacto estratégico, explotación activa confirmada y alcance sobre infraestructura crítica o actores avanzados.</em></p>
+    <div class="footer">CyberBrief · 09/03/2026 — 16/03/2026 · Generado el 16 de March de 2026</div>
+
+    <script>
+        // Envolver cada h3 y su contenido siguiente en una card
+        document.querySelectorAll('h3').forEach(h3 => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            h3.parentNode.insertBefore(card, h3);
+            let node = h3;
+            while (node) {
+                const next = node.nextSibling;
+                card.appendChild(node);
+                node = next;
+                if (!node) break;
+                if (node.nodeName === 'H3' || node.nodeName === 'H2' || node.nodeName === 'H1') break;
+            }
+        });
+
+        // Convertir "Nivel de Relevancia: X" en badges con color
+        document.querySelectorAll('p').forEach(p => {
+            const text = p.textContent.trim();
+            if (!text.startsWith('Nivel de Relevancia:')) return;
+            const nivel = text.split(':')[1]?.trim().toUpperCase() || '';
+            const clases = {
+                'CRÍTICA': 'badge-critica',
+                'CRITICA': 'badge-critica',
+                'ALTA':    'badge-alta',
+                'MEDIA':   'badge-media',
+            };
+            const cls = clases[nivel] || 'badge-default';
+            const badge = document.createElement('span');
+            badge.className = `badge ${cls}`;
+            badge.textContent = nivel;
+            p.replaceWith(badge);
+        });
+    </script>
+</body>
+</html>

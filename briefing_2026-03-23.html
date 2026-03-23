@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberBrief 16/03/2026 — 23/03/2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:          #f0f4f8;
+            --surface:     #ffffff;
+            --border:      #e2e8f0;
+            --blue-900:    #0f2d5c;
+            --blue-600:    #2563eb;
+            --blue-100:    #dbeafe;
+            --blue-50:     #eff6ff;
+            --text:        #0f172a;
+            --text-2:      #475569;
+            --text-3:      #94a3b8;
+            --critica:     #dc2626;
+            --critica-bg:  #fff1f1;
+            --alta:        #d97706;
+            --alta-bg:     #fffbeb;
+            --media:       #16a34a;
+            --media-bg:    #f0fdf4;
+            --radius:      10px;
+            --shadow:      0 1px 3px rgba(0,0,0,0.07), 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Geist', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 40px 16px 64px;
+            max-width: 820px;
+            margin: 0 auto;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            font-size: 0.7rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: 6px;
+        }
+
+        h1 + p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--blue-900);
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+
+        h1 + p + p {
+            font-size: 0.85rem;
+            color: var(--text-3);
+            font-family: 'Geist Mono', monospace;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--text-3);
+            margin: 40px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.4;
+            margin-bottom: 6px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            margin-bottom: 10px;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.15s ease, border-color 0.15s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 2px 8px rgba(37,99,235,0.08), 0 8px 24px rgba(0,0,0,0.07);
+            border-color: var(--blue-100);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 3px 9px;
+            border-radius: 999px;
+            margin-bottom: 10px;
+        }
+
+        .badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        .badge-critica  { background: var(--critica-bg); color: var(--critica); }
+        .badge-alta     { background: var(--alta-bg);    color: var(--alta);    }
+        .badge-media    { background: var(--media-bg);   color: var(--media);   }
+        .badge-default  { background: var(--blue-50);    color: var(--blue-600);}
+
+        p {
+            font-size: 0.875rem;
+            color: var(--text-2);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        strong { color: var(--text); font-weight: 500; }
+
+        a {
+            color: var(--blue-600);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        a::after {
+            content: '↗';
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        li { margin: 4px 0 4px 16px; font-size: 0.85rem; }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 16px 0;
+        }
+
+        .footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--text-3);
+            text-align: center;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.04em;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛡️ Briefing Semanal de Ciberseguridad — Semana del 16–23 de Marzo de 2026</h1>
+<hr />
+<h2>1. Amenazas y Campañas Activas</h2>
+<hr />
+<h3>Interlock Ransomware explota zero-day crítico en Cisco FMC para acceso root</h3>
+<p><strong>Relevancia: CRÍTICA</strong></p>
+<p>El grupo Interlock Ransomware está explotando activamente CVE-2026-20131 (CVSS 10.0), una deserialización insegura en Cisco Secure Firewall Management Center que permite RCE sin autenticación. CISA emitió orden de parcheo de emergencia con plazo hasta el 22 de marzo para agencias federales. La explotación de dispositivos de seguridad perimetral como vector inicial representa una táctica de alto impacto orientada a maximizar el movimiento lateral en redes corporativas.</p>
+<p><a href="https://thehackernews.com/2026/03/interlock-ransomware-exploits-cisco-fmc.html">Artículo</a></p>
+<hr />
+<h3>Hackers rusos vinculados a servicios de inteligencia comprometen cuentas de Signal y WhatsApp</h3>
+<p><strong>Relevancia: CRÍTICA</strong></p>
+<p>El FBI y CISA alertaron sobre campañas de phishing activas de actores vinculados a inteligencia rusa que apuntan a comprometer cuentas en aplicaciones de mensajería cifrada como Signal y WhatsApp. Los objetivos son individuos de alto valor estratégico, con miles de cuentas ya comprometidas. La táctica refleja el interés de actores estatales rusos por interceptar comunicaciones de fuentes humanas fuera de canales gubernamentales monitorizados.</p>
+<p><a href="https://thehackernews.com/2026/03/fbi-warns-russian-hackers-target-signal.html">Artículo</a></p>
+<hr />
+<h3>Ataque a cadena de suministro de Trivy se expande con CanisterWorm a 47 paquetes npm</h3>
+<p><strong>Relevancia: CRÍTICA</strong></p>
+<p>El compromiso del escáner Trivy de Aqua Security fue explotado por el grupo TeamPCP para inyectar malware robador de credenciales en 75 tags de GitHub Actions y comprometer 47 paquetes npm mediante el gusano autopropagante CanisterWorm. El malware abusa de canisters ICP para persistencia y extrae secretos de pipelines CI/CD. La doble comprometida del mismo proyecto en menos de un mes indica un adversario con acceso persistente a la cadena de suministro del ecosistema DevSecOps.</p>
+<p><a href="https://thehackernews.com/2026/03/trivy-supply-chain-attack-triggers-self.html">Artículo</a></p>
+<hr />
+<h3>Konni (APT norcoreano) distribuye EndRAT mediante KakaoTalk como vector lateral</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>El grupo Konni, vinculado a Corea del Norte, está usando spear-phishing para comprometer dispositivos y luego abusar de la aplicación de escritorio KakaoTalk de la víctima para propagar payloads maliciosos a contactos de confianza. La técnica convierte las comunicaciones legítimas del objetivo en un vector de distribución secundario, dificultando la detección. El uso de plataformas de mensajería locales sugiere operaciones dirigidas específicamente a objetivos surcoreanos o de la diáspora coreana.</p>
+<p><a href="https://thehackernews.com/2026/03/konni-deploys-endrat-through-spear.html">Artículo</a></p>
+<hr />
+<h3>DRILLAPP backdoor apunta a entidades ucranianas abusando del depurador de Microsoft Edge</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>Una campaña observada en febrero de 2026 despliega el backdoor DRILLAPP contra organizaciones ucranianas, con solapamientos atribuidos a Laundry Bear (UAC-0190/Void Blizzard), actor vinculado a Rusia. El malware abusa del protocolo de depuración remota de Microsoft Edge para evadir detección y mantener espionaje sigiloso. La operación forma parte del patrón continuo de ciberespionaje ruso contra infraestructura de defensa ucraniana.</p>
+<p><a href="https://thehackernews.com/2026/03/drillapp-backdoor-targets-ukraine.html">Artículo</a></p>
+<hr />
+<h2>2. Vulnerabilidades Destacadas</h2>
+<hr />
+<h3>CVE-2026-20131 — Cisco Secure FMC: RCE sin autenticación (CVSS 10.0) explotado por ransomware</h3>
+<p><strong>Relevancia: CRÍTICA</strong></p>
+<p>Deserialización insegura de flujos Java en Cisco Firewall Management Center permite a un atacante remoto no autenticado ejecutar código con privilegios root. Bajo explotación activa confirmada por el grupo Interlock Ransomware según Amazon Threat Intelligence. CISA incluyó en KEV con plazo de parcheo de emergencia; dispositivos expuestos a internet deben considerarse comprometidos hasta evidencia contraria.</p>
+<p><a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-cisco-flaw-by-sunday/">Artículo</a></p>
+<hr />
+<h3>CVE-2025-32975 — Quest KACE SMA: explotación activa confirmada (CVSS 10.0)</h3>
+<p><strong>Relevancia: CRÍTICA</strong></p>
+<p>Arctic Wolf detectó actividad maliciosa desde la semana del 9 de marzo de 2026 en entornos de clientes con sistemas Quest KACE SMA sin parchear expuestos a internet, consistente con la explotación de esta vulnerabilidad de severidad máxima. KACE SMA se usa ampliamente para gestión de endpoints en entornos empresariales, lo que amplifica el radio de impacto potencial. La exposición pública del sistema de gestión convierte este vector en crítico para operaciones de movimiento lateral masivo.</p>
+<p><a href="https://thehackernews.com/2026/03/hackers-exploit-cve-2025-32975-cvss-100.html">Artículo</a></p>
+<hr />
+<h3>DarkSword iOS Exploit Kit: 6 vulnerabilidades incluyendo 3 zero-days para toma de control total</h3>
+<p><strong>Relevancia: CRÍTICA</strong></p>
+<p>El kit de explotación DarkSword, activo desde noviembre de 2025, combina 6 vulnerabilidades de iOS —incluyendo 3 zero-days— para lograr compromiso total del dispositivo. Según Google GTIG, iVerify y Lookout, múltiples vendors de spyware comercial y actores de estado lo han utilizado activamente. CISA ordenó parcheo urgente a agencias federales; los ataques se vinculan tanto a ciberespionaje como a robo de datos de alto valor.</p>
+<p><a href="https://thehackernews.com/2026/03/darksword-ios-exploit-kit-uses-6-flaws.html">Artículo</a></p>
+<hr />
+<h3>CVE-2026-33017 — Langflow: RCE explotado 20 horas tras divulgación pública (CVSS 9.3)</h3>
+<p><strong>Relevancia: CRÍTICA</strong></p>
+<p>Fallo de autenticación ausente combinado con inyección de código en la plataforma de orquestación de IA Langflow permite ejecución remota de código sin credenciales. El tiempo entre divulgación y explotación activa —menos de 20 horas— evidencia la capacidad operativa de actores de amenaza para weaponizar vulnerabilidades en plataformas de IA de forma casi inmediata. Langflow es ampliamente adoptado en entornos empresariales de desarrollo de agentes IA.</p>
+<p><a href="https://thehackernews.com/2026/03/critical-langflow-flaw-cve-2026-33017.html">Artículo</a></p>
+<hr />
+<h3>CVE-2026-21992 — Oracle Identity Manager: RCE sin autenticación (CVSS 9.8)</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>Vulnerabilidad crítica en Oracle Identity Manager y Web Services Manager permite ejecución remota de código sin autenticación previa. Oracle emitió un parche fuera de ciclo por la severidad del impacto. El compromiso de un sistema IAM (Identity and Access Management) tiene consecuencias en cascada sobre toda la gestión de identidades corporativas, pudiendo facilitar escaladas de privilegio masivas y acceso a recursos protegidos.</p>
+<p><a href="https://thehackernews.com/2026/03/oracle-patches-critical-cve-2026-21992.html">Artículo</a></p>
+<hr />
+<h2>3. Artículos Recomendados</h2>
+<hr />
+<h3>Botnets IoT AISURU, Kimwolf, JackSkid y Mossad desmantelados tras ataques DDoS de 31.4 Tbps</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>Una operación coordinada entre DoJ, Canadá y Alemania desarticuló la infraestructura C2 de cuatro botnets IoT que comprometieron más de 3 millones de dispositivos —routers y cámaras web— y fueron responsables de ataques DDoS récord de 31.4 Tbps. La escala de estos ataques indica que actores con acceso a estas redes pueden neutralizar prácticamente cualquier objetivo en internet. La operación es relevante para organizaciones que operan infraestructura crítica expuesta a campañas volumétricas.</p>
+<p><a href="https://krebsonsecurity.com/2026/03/feds-disrupt-iot-botnets-behind-huge-ddos-attacks/">Artículo</a></p>
+<hr />
+<h3>54 herramientas EDR Killer abusan de 35 drivers firmados vulnerables mediante BYOVD</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>Un análisis reveló que 54 programas de tipo EDR killer activos —presentes en intrusiones de ransomware— explotan la técnica Bring Your Own Vulnerable Driver (BYOVD) abusando de 35 drivers firmados legítimamente. La técnica permite neutralizar soluciones de seguridad antes del despliegue del ransomware, eludiendo controles de integridad del kernel. La proliferación de estas herramientas indica una industrialización del bypass de EDR como paso estándar en ataques de ransomware.</p>
+<p><a href="https://thehackernews.com/2026/03/54-edr-killers-use-byovd-to-exploit-34.html">Artículo</a></p>
+<hr />
+<h3>Fallos en IA: Amazon Bedrock, LangSmith y SGLang permiten exfiltración de datos y RCE vía DNS</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>BeyondTrust describió un nuevo método de exfiltración de datos en entornos de ejecución de código IA mediante consultas DNS, afectando a Amazon Bedrock AgentCore, LangSmith y SGLang. El sandbox de Bedrock AgentCore permite consultas DNS salientes que habilitan shells interactivos para un atacante. Este vector ilustra la superficie de ataque emergente de los entornos de agentes IA en producción, donde los controles de red tradicionales resultan insuficientes.</p>
+<p><a href="https://thehackernews.com/2026/03/ai-flaws-in-amazon-bedrock-langsmith.html">Artículo</a></p>
+<hr />
+<h3>GlassWorm: tokens GitHub robados usados para inyectar malware en cientos de repositorios Python</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>La campaña GlassWorm utiliza tokens GitHub comprometidos para realizar force-push de código ofuscado malicioso en repositorios Python legítimos, incluyendo proyectos Django, código ML y paquetes PyPI. El malware se añade a ficheros de entrada como setup.py, afectando a cualquier usuario que instale o ejecute el código. El ataque supone una amenaza directa para organizaciones que consumen dependencias Python sin verificación de integridad en sus pipelines de desarrollo.</p>
+<p><a href="https://thehackernews.com/2026/03/glassworm-attack-uses-stolen-github.html">Artículo</a></p>
+<hr />
+<h3>LeakNet Ransomware adopta ClickFix para acceso inicial mediante sitios web comprometidos</h3>
+<p><strong>Relevancia: ALTA</strong></p>
+<p>El grupo LeakNet Ransomware ha incorporado la táctica ClickFix —engañar a usuarios para ejecutar comandos maliciosos manualmente a través de sitios web comprometidos— como método de acceso inicial, sustituyendo el uso de credenciales robadas tradicionales. El loader en memoria basado en Deno dificulta la detección forense al no escribir en disco. La adopción de ingeniería social avanzada combinada con técnicas de evasión indica una maduración operativa de este grupo de ransomware.</p>
+<p><a href="https://thehackernews.com/2026/03/leaknet-ransomware-uses-clickfix-via.html">Artículo</a></p>
+<hr />
+<p><em>Briefing generado con base en fuentes públicas de inteligencia de amenazas. Clasificación de relevancia basada en impacto estratégico, confirmación de explotación activa y afectación a infraestructuras críticas o gubernamentales.</em></p>
+    <div class="footer">CyberBrief · 16/03/2026 — 23/03/2026 · Generado el 23 de March de 2026</div>
+
+    <script>
+        // Envolver cada h3 y su contenido siguiente en una card
+        document.querySelectorAll('h3').forEach(h3 => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            h3.parentNode.insertBefore(card, h3);
+            let node = h3;
+            while (node) {
+                const next = node.nextSibling;
+                card.appendChild(node);
+                node = next;
+                if (!node) break;
+                if (node.nodeName === 'H3' || node.nodeName === 'H2' || node.nodeName === 'H1') break;
+            }
+        });
+
+        // Convertir "Nivel de Relevancia: X" en badges con color
+        document.querySelectorAll('p').forEach(p => {
+            const text = p.textContent.trim();
+            if (!text.startsWith('Nivel de Relevancia:')) return;
+            const nivel = text.split(':')[1]?.trim().toUpperCase() || '';
+            const clases = {
+                'CRÍTICA': 'badge-critica',
+                'CRITICA': 'badge-critica',
+                'ALTA':    'badge-alta',
+                'MEDIA':   'badge-media',
+            };
+            const cls = clases[nivel] || 'badge-default';
+            const badge = document.createElement('span');
+            badge.className = `badge ${cls}`;
+            badge.textContent = nivel;
+            p.replaceWith(badge);
+        });
+    </script>
+</body>
+</html>

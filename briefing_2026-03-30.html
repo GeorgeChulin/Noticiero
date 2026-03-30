@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberBrief 23/03/2026 — 30/03/2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:          #f0f4f8;
+            --surface:     #ffffff;
+            --border:      #e2e8f0;
+            --blue-900:    #0f2d5c;
+            --blue-600:    #2563eb;
+            --blue-100:    #dbeafe;
+            --blue-50:     #eff6ff;
+            --text:        #0f172a;
+            --text-2:      #475569;
+            --text-3:      #94a3b8;
+            --critica:     #dc2626;
+            --critica-bg:  #fff1f1;
+            --alta:        #d97706;
+            --alta-bg:     #fffbeb;
+            --media:       #16a34a;
+            --media-bg:    #f0fdf4;
+            --radius:      10px;
+            --shadow:      0 1px 3px rgba(0,0,0,0.07), 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Geist', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 40px 16px 64px;
+            max-width: 820px;
+            margin: 0 auto;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            font-size: 0.7rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: 6px;
+        }
+
+        h1 + p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--blue-900);
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+
+        h1 + p + p {
+            font-size: 0.85rem;
+            color: var(--text-3);
+            font-family: 'Geist Mono', monospace;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--text-3);
+            margin: 40px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.4;
+            margin-bottom: 6px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            margin-bottom: 10px;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.15s ease, border-color 0.15s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 2px 8px rgba(37,99,235,0.08), 0 8px 24px rgba(0,0,0,0.07);
+            border-color: var(--blue-100);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 3px 9px;
+            border-radius: 999px;
+            margin-bottom: 10px;
+        }
+
+        .badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        .badge-critica  { background: var(--critica-bg); color: var(--critica); }
+        .badge-alta     { background: var(--alta-bg);    color: var(--alta);    }
+        .badge-media    { background: var(--media-bg);   color: var(--media);   }
+        .badge-default  { background: var(--blue-50);    color: var(--blue-600);}
+
+        p {
+            font-size: 0.875rem;
+            color: var(--text-2);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        strong { color: var(--text); font-weight: 500; }
+
+        a {
+            color: var(--blue-600);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        a::after {
+            content: '↗';
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        li { margin: 4px 0 4px 16px; font-size: 0.85rem; }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 16px 0;
+        }
+
+        .footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--text-3);
+            text-align: center;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.04em;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛡️ Briefing Semanal de Inteligencia en Ciberseguridad</h1>
+<p><strong>Semana del 23 al 30 de marzo de 2026</strong></p>
+<hr />
+<h2>1. Amenazas y Campañas Activas</h2>
+<h3>Tres clusters alineados con China atacan gobierno del Sudeste Asiático</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Operación compleja y bien financiada atribuida a tres grupos vinculados a China que comprometieron una organización gubernamental en el Sudeste Asiático. El arsenal desplegado incluye malware de propagación por USB (HIUPAN), loaders personalizados (PUBLOAD, EggStremeLoader) y herramientas de post-explotación avanzadas. La coordinación entre tres clusters distintos sugiere una operación de inteligencia estatal de alto nivel con objetivos geopolíticos específicos.
+<a href="https://thehackernews.com/2026/03/three-china-linked-clusters-target.html">Artículo</a></p>
+<hr />
+<h3>Red Menshen embebe implantes BPFDoor en redes de telecomunicaciones</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+El grupo vinculado a China conocido como Red Menshen (Earth Bluecrow) mantiene una campaña persistente y activa infiltrando redes de telecomunicaciones para espiar redes gubernamentales. El uso de implantes BPFDoor, extremadamente difíciles de detectar al operar a nivel de filtro de paquetes del kernel, garantiza acceso sigiloso y duradero. El posicionamiento estratégico en infraestructuras de telecomunicaciones permite interceptación de tráfico a escala nacional.
+<a href="https://thehackernews.com/2026/03/china-linked-red-menshen-uses-stealthy.html">Artículo</a></p>
+<hr />
+<h3>Iran-Handala vulnera el correo personal del Director del FBI y lanza wiper contra Stryker</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+El grupo Handala Hack Team, con nexos iraníes, comprometió la cuenta personal de correo de Kash Patel, director del FBI, y publicó fotografías y documentos exfiltrados. Simultáneamente, ejecutaron un ataque wiper contra Stryker, combinando espionaje de alto perfil con sabotaje destructivo. La brecha fue confirmada oficialmente por el FBI, lo que eleva el impacto político y la sensibilidad estratégica del incidente.
+<a href="https://thehackernews.com/2026/03/iran-linked-hackers-breach-fbi.html">Artículo</a></p>
+<hr />
+<h3>TA446 (Callisto) despliega kit de exploits DarkSword contra dispositivos iOS</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+El grupo ruso TA446, también conocido como Callisto y vinculado a operaciones de espionaje de estado, está utilizando el kit de exploits DarkSword en campañas de spear-phishing dirigido a dispositivos iOS. La atribución con alta confianza por parte de Proofpoint y el uso de un exploit kit sofisticado y recientemente divulgado indica capacidades ofensivas de primer nivel. El perfil de víctimas típico de TA446 incluye periodistas, académicos y funcionarios gubernamentales de países OTAN.
+<a href="https://thehackernews.com/2026/03/ta446-deploys-leaked-darksword-ios.html">Artículo</a></p>
+<hr />
+<h3>TeamPCP escala su campaña de supply chain comprometiendo Telnyx, LiteLLM y Checkmarx</h3>
+<p><strong>Relevancia: ALTA</strong>
+El actor TeamPCP continúa expandiendo su campaña de ataques a la cadena de suministro de software, comprometiendo el paquete PyPI Telnyx (versiones 4.87.1–4.87.2), LiteLLM (1.82.7–1.82.8) y los workflows de GitHub Actions de Checkmarx, todo mediante credenciales CI/CD robadas. Los payloads maliciosos incluyen credential harvesters ocultados en archivos WAV, kits de movimiento lateral en Kubernetes y backdoors persistentes. La amplitud de los objetivos —herramientas de seguridad, frameworks de IA y librerías ampliamente adoptadas— indica una operación diseñada para maximizar el alcance de la infección downstream.
+<a href="https://thehackernews.com/2026/03/teampcp-backdoors-litellm-versions.html">Artículo</a></p>
+<hr />
+<h2>2. Vulnerabilidades Destacadas</h2>
+<h3>CVE-2026-3055 — Citrix NetScaler ADC/Gateway (CVSS 9.3): Memory Overread bajo reconocimiento activo</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Fallo de validación de input insuficiente en Citrix NetScaler ADC y NetScaler Gateway que permite a un atacante no autenticado leer memoria del sistema y filtrar información sensible. Defused Cyber y watchTowr han confirmado actividad de reconocimiento activo contra instancias expuestas, lo que anticipa explotación masiva en corto plazo. Los appliances NetScaler son objetivos de alto valor habituales en campañas APT por su posición perimetral en redes corporativas y gubernamentales.
+<a href="https://thehackernews.com/2026/03/citrix-netscaler-under-active-recon-for.html">Artículo</a></p>
+<hr />
+<h3>CVE-2025-53521 — F5 BIG-IP APM (CVSS 9.3): RCE añadido al catálogo KEV de CISA</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+CISA incorporó este fallo crítico de ejecución remota de código en F5 BIG-IP Access Policy Manager a su catálogo de Vulnerabilidades Explotadas Conocidas (KEV), citando evidencia de explotación activa confirmada. F5 BIG-IP es ampliamente utilizado como controlador de entrega de aplicaciones en infraestructuras críticas, financieras y gubernamentales. La explotación exitosa otorga control completo del appliance, comprometiendo la segmentación de red y el acceso a aplicaciones protegidas.
+<a href="https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html">Artículo</a></p>
+<hr />
+<h3>CVE-2026-33017 — Langflow: Explotación activa para secuestro de agentes de IA</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+CISA alerta sobre la explotación activa de una vulnerabilidad crítica en Langflow, framework open-source ampliamente utilizado para construir agentes de IA. Los atacantes están abusando del fallo para secuestrar flujos de trabajo de IA, con implicaciones que van desde la exfiltración de datos hasta la manipulación de sistemas autónomos conectados a recursos empresariales. El creciente uso de Langflow en entornos productivos amplifica significativamente la superficie de ataque expuesta.
+<a href="https://www.bleepingcomputer.com/news/security/cisa-new-langflow-flaw-actively-exploited-to-hijack-ai-workflows/">Artículo</a></p>
+<hr />
+<h3>Vulnerabilidades críticas en Fortinet FortiClient EMS: explotación activa confirmada</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Defused Cyber confirma la explotación activa de una vulnerabilidad crítica en Fortinet FortiClient EMS, plataforma de gestión de endpoints corporativos ampliamente desplegada en entornos enterprise. FortiClient EMS es un vector de ataque especialmente sensible al tener acceso privilegiado a la gestión de políticas de seguridad en endpoints. La combinación de un perfil de víctimas empresarial y explotación activa hace de este fallo una prioridad inmediata de parcheo.
+<a href="https://www.bleepingcomputer.com/news/security/critical-fortinet-forticlient-ems-flaw-now-exploited-in-attacks/">Artículo</a></p>
+<hr />
+<h3>Kit Coruna iOS reutiliza exploit de Operation Triangulation (2023) en ataques masivos</h3>
+<p><strong>Relevancia: ALTA</strong>
+Kaspersky confirma que el kit de exploits iOS Coruna, recientemente descubierto, reutiliza código de exploit de kernel procedente de la Operación Triangulation de 2023, actualizado para nuevas versiones de iOS. Este hallazgo revela que técnicas de explotación de estado nación están siendo reutilizadas o transferidas a actores menos sofisticados para campañas masivas. Apple ha comenzado a enviar alertas de pantalla de bloqueo a usuarios con versiones vulnerables, confirmando la escala del problema.
+<a href="https://thehackernews.com/2026/03/coruna-ios-kit-reuses-2023.html">Artículo</a></p>
+<hr />
+<h2>3. Artículos Recomendados</h2>
+<h3>El Kill Chain es obsoleto cuando tu agente de IA es la amenaza</h3>
+<p><strong>Relevancia: ALTA</strong>
+Análisis estratégico sobre el incidente de septiembre de 2025 en que un actor estatal utilizó un agente de IA de codificación para ejecutar de forma autónoma una campaña de ciberespionaje contra 30 objetivos globales, con el agente gestionando el 80-90% de las operaciones tácticas. El artículo argumenta que los marcos defensivos tradicionales como el Kill Chain son estructuralmente incapaces de abordar amenazas donde el propio agente de IA es el vector. Lectura esencial para equipos de inteligencia de amenazas que necesitan anticipar la evolución del panorama de amenazas AI-driven.
+<a href="https://thehackernews.com/2026/03/the-kill-chain-is-obsolete-when-your-ai.html">Artículo</a></p>
+<hr />
+<h3>Ocho vectores de ataque descubiertos en AWS Bedrock</h3>
+<p><strong>Relevancia: ALTA</strong>
+Investigación técnica que documenta ocho vectores de ataque identificados en AWS Bedrock, la plataforma de Amazon para construir aplicaciones de IA con acceso a modelos fundacionales y datos empresariales. Los vectores aprovechan la conectividad de los agentes de IA con sistemas como Salesforce, Lambda y SharePoint para ejecutar acciones no autorizadas. El análisis es crítico para organizaciones que están adoptando agentes de IA con acceso a datos y sistemas productivos.
+<a href="https://thehackernews.com/2026/03/we-found-eight-attack-vectors-inside.html">Artículo</a></p>
+<hr />
+<h3>La Comisión Europea confirma brecha de datos tras hackeo de Europa.eu vía ShinyHunters</h3>
+<p><strong>Relevancia: ALTA</strong>
+La Comisión Europea ha confirmado oficialmente una brecha de datos tras el compromiso de su plataforma Europa.eu y su entorno cloud en Amazon, reclamado por el grupo de extorsión ShinyHunters. El incidente afecta a la principal institución ejecutiva de la Unión Europea, con potencial impacto en información sensible sobre políticas y funcionarios. La confirmación oficial y la escala institucional del objetivo convierten este incidente en un indicador relevante de la tendencia a atacar infraestructuras digitales de organismos gubernamentales supranacionales.
+<a href="https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-breach-after-europaeu-hack/">Artículo</a></p>
+<hr />
+<h3>Campaña de device code phishing compromete 340+ organizaciones en Microsoft 365</h3>
+<p><strong>Relevancia: ALTA</strong>
+Campaña activa de phishing mediante abuso de flujo OAuth de device code que ha comprometido más de 340 organizaciones en EE.UU., Canadá, Australia, Nueva Zelanda y Alemania desde febrero de 2026. La técnica permite a los atacantes obtener tokens de acceso legítimos a Microsoft 365 sin necesidad de credenciales, eludiendo MFA en muchos escenarios. La aceleración en la cadencia de nuevos casos desde su detección inicial apunta a una operación a gran escala con infraestructura robusta.
+<a href="https://thehackernews.com/2026/03/device-code-phishing-hits-340-microsoft.html">Artículo</a></p>
+<hr />
+<h3>Estamos en guerra: geopolítica y ciberoperaciones en 2026</h3>
+<p><strong>Relevancia: ALTA</strong>
+Análisis estratégico de largo alcance que examina cómo las tensiones geopolíticas crecientes se reflejan y en ocasiones son precedidas por ciberoperaciones, y cómo la tecnología se ha convertido en un dominio politizado. El artículo contextualiza el panorama actual de amenazas dentro del marco del orden internacional post-1945 y sus fracturas actuales. Lectura recomendada para profesionales de inteligencia estratégica que necesitan contextualizar las amenazas técnicas dentro del entorno geopolítico global.
+<a href="https://thehackernews.com/2026/03/we-are-at-war.html">Artículo</a></p>
+<hr />
+<p><em>Briefing generado con base en fuentes públicas: The Hacker News, BleepingComputer y Krebs on Security. Período cubierto: 23–30 marzo 2026.</em></p>
+    <div class="footer">CyberBrief · 23/03/2026 — 30/03/2026 · Generado el 30 de March de 2026</div>
+
+    <script>
+        // Envolver cada h3 y su contenido siguiente en una card
+        document.querySelectorAll('h3').forEach(h3 => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            h3.parentNode.insertBefore(card, h3);
+            let node = h3;
+            while (node) {
+                const next = node.nextSibling;
+                card.appendChild(node);
+                node = next;
+                if (!node) break;
+                if (node.nodeName === 'H3' || node.nodeName === 'H2' || node.nodeName === 'H1') break;
+            }
+        });
+
+        // Convertir "Nivel de Relevancia: X" en badges con color
+        document.querySelectorAll('p').forEach(p => {
+            const text = p.textContent.trim();
+            if (!text.startsWith('Nivel de Relevancia:')) return;
+            const nivel = text.split(':')[1]?.trim().toUpperCase() || '';
+            const clases = {
+                'CRÍTICA': 'badge-critica',
+                'CRITICA': 'badge-critica',
+                'ALTA':    'badge-alta',
+                'MEDIA':   'badge-media',
+            };
+            const cls = clases[nivel] || 'badge-default';
+            const badge = document.createElement('span');
+            badge.className = `badge ${cls}`;
+            badge.textContent = nivel;
+            p.replaceWith(badge);
+        });
+    </script>
+</body>
+</html>

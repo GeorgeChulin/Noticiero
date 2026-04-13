@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberBrief 06/04/2026 — 13/04/2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:          #f0f4f8;
+            --surface:     #ffffff;
+            --border:      #e2e8f0;
+            --blue-900:    #0f2d5c;
+            --blue-600:    #2563eb;
+            --blue-100:    #dbeafe;
+            --blue-50:     #eff6ff;
+            --text:        #0f172a;
+            --text-2:      #475569;
+            --text-3:      #94a3b8;
+            --critica:     #dc2626;
+            --critica-bg:  #fff1f1;
+            --alta:        #d97706;
+            --alta-bg:     #fffbeb;
+            --media:       #16a34a;
+            --media-bg:    #f0fdf4;
+            --radius:      10px;
+            --shadow:      0 1px 3px rgba(0,0,0,0.07), 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Geist', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 40px 16px 64px;
+            max-width: 820px;
+            margin: 0 auto;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            font-size: 0.7rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--blue-600);
+            margin-bottom: 6px;
+        }
+
+        h1 + p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--blue-900);
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+
+        h1 + p + p {
+            font-size: 0.85rem;
+            color: var(--text-3);
+            font-family: 'Geist Mono', monospace;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--text-3);
+            margin: 40px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.4;
+            margin-bottom: 6px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            margin-bottom: 10px;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.15s ease, border-color 0.15s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 2px 8px rgba(37,99,235,0.08), 0 8px 24px rgba(0,0,0,0.07);
+            border-color: var(--blue-100);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 3px 9px;
+            border-radius: 999px;
+            margin-bottom: 10px;
+        }
+
+        .badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        .badge-critica  { background: var(--critica-bg); color: var(--critica); }
+        .badge-alta     { background: var(--alta-bg);    color: var(--alta);    }
+        .badge-media    { background: var(--media-bg);   color: var(--media);   }
+        .badge-default  { background: var(--blue-50);    color: var(--blue-600);}
+
+        p {
+            font-size: 0.875rem;
+            color: var(--text-2);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        strong { color: var(--text); font-weight: 500; }
+
+        a {
+            color: var(--blue-600);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        a::after {
+            content: '↗';
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        li { margin: 4px 0 4px 16px; font-size: 0.85rem; }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 16px 0;
+        }
+
+        .footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--text-3);
+            text-align: center;
+            font-family: 'Geist Mono', monospace;
+            letter-spacing: 0.04em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Briefing Semanal de Inteligencia en Ciberseguridad</h1>
+<p><strong>Semana del 7 al 13 de abril de 2026</strong></p>
+<hr />
+<h2>1. Amenazas y Campañas Activas</h2>
+<h3>APT28 despliega PRISMEX y compromete routers SOHO en campaña global de espionaje</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+El actor ruso APT28 (Forest Blizzard) opera simultáneamente en dos frentes: una campaña de spear-phishing contra Ucrania y aliados NATO desplegando el nuevo malware PRISMEX —que combina esteganografía avanzada, COM hijacking y abuso de servicios cloud para C2— y una operación paralela de compromiso masivo de routers MikroTik y TP-Link activa desde mayo de 2025. Esta segunda operación permitió exfiltrar tokens de autenticación de Microsoft Office de más de 18.000 redes sin desplegar código malicioso en los endpoints. La combinación de ambas campañas evidencia una doctrina operacional rusa de alta sofisticación técnica orientada a persistencia estratégica en infraestructura occidental.
+<a href="https://thehackernews.com/2026/04/apt28-deploys-prismex-malware-in.html">Artículo</a> | <a href="https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/">Krebs on Security</a></p>
+<hr />
+<h3>Lazarus / Contagious Interview distribuye 1.700 paquetes maliciosos en npm, PyPI, Go, Rust y PHP</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+El grupo norcoreano vinculado a Lazarus ha expandido significativamente su campaña Contagious Interview hacia los ecosistemas Go, Rust y PHP, sumándose a los ya comprometidos npm y PyPI. Los paquetes se disfrazan de herramientas legítimas de desarrollo y actúan como malware loaders, apuntando sistemáticamente a entornos de desarrolladores para comprometer cadenas de suministro de software. La escala —1.700 paquetes distribuidos— y la diversificación de ecosistemas indica una operación de inteligencia económica y sabotaje a largo plazo alineada con los objetivos estratégicos de Pyongyang.
+<a href="https://thehackernews.com/2026/04/n-korean-hackers-spread-1700-malicious.html">Artículo</a></p>
+<hr />
+<h3>Actores iraníes atacan infraestructura crítica estadounidense mediante PLCs expuestos a Internet</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Agencias de ciberseguridad e inteligencia de EE.UU. han alertado sobre actores iraníes comprometiendo activamente dispositivos OT/ICS expuestos, especialmente PLCs Rockwell Automation, con casi 4.000 unidades industriales identificadas como vulnerables. Los ataques han causado pérdida de funcionalidad en PLCs, manipulación de datos en pantallas y disrupciones operacionales reales. La naturaleza confirmada de los impactos físicos eleva esta campaña al nivel de amenaza híbrida con potencial de escalada cinética, especialmente en el contexto del conflicto en Oriente Medio.
+<a href="https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html">Artículo THN</a> | <a href="https://www.bleepingcomputer.com/news/security/nearly-4-000-us-industrial-devices-exposed-to-iranian-cyberattacks/">BleepingComputer</a></p>
+<hr />
+<h3>Storm-1175 (China) explota zero-days para desplegar Medusa ransomware en ataques de alta velocidad</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+El actor chino Storm-1175 ha sido vinculado a ataques combinando vulnerabilidades zero-day y N-day contra activos perimetrales expuestos a Internet para desplegar el ransomware Medusa. Su elevado tempo operacional y capacidad para identificar rápidamente superficies de ataque expuestas resultan en compromisos exitosos antes de que las organizaciones puedan aplicar parches. La atribución a un actor estatal chino de una operación ransomware supone una convergencia preocupante entre espionaje patrocinado por el estado y disrupción económica mediante extorsión.
+<a href="https://thehackernews.com/2026/04/china-linked-storm-1175-exploits-zero.html">Artículo</a></p>
+<hr />
+<h3>GlassWorm evoluciona con dropper en Zig para infectar IDEs de desarrolladores vía Open VSX</h3>
+<p><strong>Relevancia: ALTA</strong>
+La campaña GlassWorm ha incorporado un nuevo dropper escrito en Zig, distribuido a través de una extensión maliciosa en Open VSX que suplanta a WakaTime, diseñado para infectar todos los IDEs presentes en la máquina del desarrollador. La elección de Zig —un lenguaje de bajo nivel con detección AV escasa— y el vector de extensiones de IDE representa una evolución táctica orientada a maximizar la persistencia y el alcance del compromiso en entornos de desarrollo. Esta campaña converge con las operaciones norcoreanas de supply chain, convirtiendo el puesto de trabajo del desarrollador en el eslabón más crítico de la cadena.
+<a href="https://thehackernews.com/2026/04/glassworm-campaign-uses-zig-dropper-to.html">Artículo</a></p>
+<hr />
+<h2>2. Vulnerabilidades Destacadas</h2>
+<h3>CVE-2026-34621 — Adobe Acrobat Reader (CVSS 8.6): Zero-day explotado activamente desde diciembre de 2025</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Adobe ha publicado actualizaciones de emergencia para esta vulnerabilidad crítica en Acrobat Reader que permite ejecución de código arbitrario en instalaciones afectadas mediante documentos PDF maliciosos. La investigación de EXPMON revela que la explotación comenzó al menos en noviembre de 2025, con el artefacto "Invoice540.pdf" apareciendo en VirusTotal el 28 de noviembre, confirmando un período prolongado de explotación silenciosa. La ubicuidad de Adobe Reader en entornos corporativos y gubernamentales convierte este CVE en un vector de intrusión inicial de primer orden para múltiples actores de amenaza.
+<a href="https://thehackernews.com/2026/04/adobe-reader-zero-day-exploited-via.html">Adobe Acrobat Zero-Day</a> | <a href="https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html">Parche</a></p>
+<hr />
+<h3>CVE-2026-39987 — Marimo Python Notebook (CVSS 9.3): RCE pre-autenticado explotado en menos de 10 horas</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Esta vulnerabilidad de ejecución remota de código sin autenticación en Marimo, plataforma open-source ampliamente utilizada en ciencia de datos y análisis, fue armada en menos de 10 horas tras su divulgación pública, siendo explotada activamente para robo de credenciales según Sysdig. Afecta a todas las versiones hasta la más reciente en el momento de divulgación. La velocidad de explotación —inferior a una jornada laboral— confirma la operación de sistemas automatizados de weaponización y subraya la imposibilidad de confiar en ventanas de parcheo tradicionales para herramientas de datos expuestas.
+<a href="https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html">THN</a> | <a href="https://www.bleepingcomputer.com/news/security/critical-marimo-pre-auth-rce-flaw-now-under-active-exploitation/">BleepingComputer</a></p>
+<hr />
+<h3>CVE-2025-59528 — Flowise AI Agent Builder (CVSS 10.0): RCE activo con más de 12.000 instancias expuestas</h3>
+<p><strong>Relevancia: CRÍTICA</strong>
+Esta vulnerabilidad de inyección de código con severidad máxima en Flowise, plataforma open-source para construcción de agentes de IA, está siendo activamente explotada contra más de 12.000 instancias expuestas según VulnCheck. El fallo reside en el nodo CustomMCP, que permite a atacantes ejecutar código arbitrario sin restricciones. La proliferación de plataformas de IA en infraestructura empresarial sin los controles de seguridad maduros de software tradicional crea una superficie de ataque de alta densidad con impacto potencial sobre pipelines de datos críticos y entornos de producción de IA.
+<a href="https://thehackernews.com/2026/04/flowise-ai-agent-builder-under-active.html">Artículo</a></p>
+<hr />
+<h3>CVE-2026-34040 — Docker Engine (CVSS 8.8): Bypass de autorización con acceso al host</h3>
+<p><strong>Relevancia: ALTA</strong>
+Esta vulnerabilidad de alta severidad en Docker Engine permite eludir plugins de autorización (AuthZ) en determinadas circunstancias, derivada de una corrección incompleta del CVE-2024-41110 (severidad máxima) publicado en julio de 2024. Un atacante que explote este fallo puede obtener acceso al sistema host subyacente, comprometiendo el aislamiento de contenedores. La recurrencia de la vulnerabilidad en el mismo componente tras un parche previo insuficiente señala un problema de profundidad en el proceso de remediación de Docker y afecta directamente a entornos de contenedores en producción.
+<a href="https://thehackernews.com/2026/04/docker-cve-2026-34040-lets-attackers.html">Artículo</a></p>
+<hr />
+<h3>Supply Chain: Compromiso de CPUID distribuye STX RAT vía CPU-Z y HWMonitor troyanizados</h3>
+<p><strong>Relevancia: ALTA</strong>
+Actores desconocidos comprometieron la API del sitio web CPUID.com durante menos de 24 horas (9-10 de abril) para reemplazar los binarios legítimos de CPU-Z, HWMonitor y PerfMonitor con versiones maliciosas que despliegan el troyano de acceso remoto STX RAT. La ventana de ataque, aunque breve, expuso a todos los usuarios que descargaron las herramientas en ese período. El ataque a herramientas de diagnóstico de hardware —ampliamente utilizadas por administradores de sistemas y entusiastas técnicos— representa un vector de compromiso de alta confianza con distribución orgánica en perfiles de alto valor.
+<a href="https://thehackernews.com/2026/04/cpuid-breach-distributes-stx-rat-via.html">THN</a> | <a href="https://www.bleepingcomputer.com/news/security/supply-chain-attack-at-cpuid-pushes-malware-with-cpu-z-hwmonitor/">BleepingComputer</a></p>
+<hr />
+<h2>3. Artículos Recomendados</h2>
+<h3>Anthropic lanza Project Glasswing: Claude Mythos identifica miles de zero-days en sistemas críticos</h3>
+<p><strong>Relevancia: ALTA</strong>
+Anthropic ha desplegado una versión preliminar de su modelo frontier Claude Mythos en una iniciativa de seguridad denominada Project Glasswing, en colaboración con AWS, Apple, Broadcom, Cisco y CrowdStrike, entre otros. El modelo ha identificado miles de vulnerabilidades zero-day en sistemas de mayor escala. Este desarrollo marca un punto de inflexión en la aplicación ofensiva/defensiva de modelos de IA avanzados y establece un precedente de colaboración entre grandes tecnológicas para descubrimiento automatizado de vulnerabilidades a escala industrial.
+<a href="https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html">Artículo</a></p>
+<hr />
+<h3>Qilin y Warlock ransomware neutralizan más de 300 herramientas EDR mediante técnica BYOVD</h3>
+<p><strong>Relevancia: ALTA</strong>
+Los operadores de los ransomware Qilin y Warlock han adoptado sistemáticamente la técnica Bring Your Own Vulnerable Driver (BYOVD) para deshabilitar más de 300 soluciones EDR en hosts comprometidos, desplegando una DLL maliciosa ("msimg32.dll") según análisis de Cisco Talos y Trend Micro. Esta táctica, ya documentada en actores de estado, se consolida ahora como estándar operacional en grupos de ransomware de mediana sofisticación, reduciendo drásticamente la efectividad de defensas endpoint en la fase previa al cifrado. Las organizaciones que confíen exclusivamente en EDR como control primario quedan expuestas ante esta TTPs.
+<a href="https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html">Artículo</a></p>
+<hr />
+<h3>OpenAI revoca certificado macOS tras incidente de supply chain con librería Axios maliciosa</h3>
+<p><strong>Relevancia: ALTA</strong>
+El workflow de GitHub Actions utilizado por OpenAI para firmar sus aplicaciones macOS descargó la librería Axios comprometida el 31 de marzo de 2026, llevando a la compañía a revocar el certificado de sus aplicaciones como medida de contención. Aunque OpenAI indica que no se comprometieron datos de usuarios ni sistemas internos, el incidente ilustra cómo la cadena de firma de software de actores tecnológicos de primer nivel puede verse afectada por compromisos upstream de dependencias. La exposición de pipelines de CI/CD de herramientas de IA a ataques de supply chain tiene implicaciones sistémicas de amplio alcance.
+<a href="https://thehackernews.com/2026/04/openai-revokes-macos-app-certificate.html">Artículo</a></p>
+<hr />
+<h3>Las extensiones de IA para navegadores emergen como nueva superficie de ataque empresarial no supervisada</h3>
+<p><strong>Relevancia: ALTA</strong>
+Un informe de LayerX documenta el crecimiento descontrolado de extensiones de navegador con capacidades de IA en entornos corporativos, operando fuera de la visibilidad de los equipos de seguridad y eludiendo controles establecidos. A diferencia del shadow IT tradicional, estas extensiones tienen acceso directo al DOM, credenciales en tránsito, sesiones activas y datos sensibles del navegador. La convergencia de IA con el vector de extensiones de navegador —históricamente subestimado— crea una superficie de ataque de alta densidad que los marcos de seguridad actuales no están diseñados para gestionar.
+<a href="https://thehackernews.com/2026/04/browser-extensions-are-new-ai.html">Artículo</a></p>
+<hr />
+<h3>Google despliega Device Bound Session Credentials (DBSC) en Chrome 146 para Windows contra robo de sesiones</h3>
+<p><strong>Relevancia: MEDIA</strong>
+Google ha puesto a disposición general DBSC en Chrome 146 para usuarios Windows, vinculando criptográficamente las credenciales de sesión al dispositivo físico mediante el TPM, bloqueando la reutilización de cookies de sesión robadas por infostealers en otros equipos. La tecnología representa un cambio arquitectónico significativo en la gestión de sesiones web y, si es adoptada masivamente por servicios críticos, podría deprecar uno de los vectores de post-compromiso más rentables del ecosistema de amenazas actual —el robo y reventa de cookies de sesión activas.
+<a href="https://thehackernews.com/2026/04/google-rolls-out-dbsc-in-chrome-146-to.html">THN</a> | [Bleep</p>
+    <div class="footer">CyberBrief · 06/04/2026 — 13/04/2026 · Generado el 13 de April de 2026</div>
+
+    <script>
+        // Envolver cada h3 y su contenido siguiente en una card
+        document.querySelectorAll('h3').forEach(h3 => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            h3.parentNode.insertBefore(card, h3);
+            let node = h3;
+            while (node) {
+                const next = node.nextSibling;
+                card.appendChild(node);
+                node = next;
+                if (!node) break;
+                if (node.nodeName === 'H3' || node.nodeName === 'H2' || node.nodeName === 'H1') break;
+            }
+        });
+
+        // Convertir "Nivel de Relevancia: X" en badges con color
+        document.querySelectorAll('p').forEach(p => {
+            const text = p.textContent.trim();
+            if (!text.startsWith('Nivel de Relevancia:')) return;
+            const nivel = text.split(':')[1]?.trim().toUpperCase() || '';
+            const clases = {
+                'CRÍTICA': 'badge-critica',
+                'CRITICA': 'badge-critica',
+                'ALTA':    'badge-alta',
+                'MEDIA':   'badge-media',
+            };
+            const cls = clases[nivel] || 'badge-default';
+            const badge = document.createElement('span');
+            badge.className = `badge ${cls}`;
+            badge.textContent = nivel;
+            p.replaceWith(badge);
+        });
+    </script>
+</body>
+</html>
